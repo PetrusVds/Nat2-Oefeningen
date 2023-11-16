@@ -1,0 +1,51 @@
+% \textbf{\underline{OZ 9 - Wisselstroomkringen - Oefening 4:}}
+% \vspace{0.5cm}
+
+% Een weerstand van $ 10,0 \ \Omega $, en een spoel met inductantie 10,0 mH en een condensator van $ 100 \ \mu$F worden in serie aangesloten op een 50,0 V (rms) spanningsbron met een variabele frequentie. Bepaal de energie die de bron levert aan het circuit in één periode als de frequentie wordt ingesteld op het dubbel van de resonantiefrequentie.
+
+% \begin{description}[labelwidth=1.5cm, leftmargin=!]
+%     \item[Geg. :]   $ R = 10,0 \ \Omega $; $ L = 10,0 $ mH; $ C = 100 \ \mu$F; $ \Delta V_{rms} = 50,0 $ V; $ f = 2 f_0 $;
+%     \item[Gevr. :]  $ U $;
+%     \item[Opl. :]   $ f = f_0 \to X_L = X_C $
+                    
+%                     \hspace{-0.57cm} $ \Leftrightarrow 
+%                     \omega_0 L = \dfrac{1}{\omega C} $
+                    
+%                     \hspace{-0.57cm} $ \Leftrightarrow 
+%                     2 \pi f_0 L = \dfrac{1}{2 \pi f_0 C} $
+                    
+%                     \hspace{-0.57cm} $ \Leftrightarrow 
+%                     f_0 = \dfrac{1}{2 \pi \sqrt{L C}} 
+%                     = \dfrac{1}{2 \pi \sqrt{10,0 \cdot 10^{-3} \cdot 100 \cdot 10^{-6}}} 
+%                     = 159,1549431 $ Hz
+                    
+%                     $ f = 2 f_0 
+%                     = 2 \cdot 159,1549431 
+%                     = 318,3098862 $ Hz
+                    
+%                     $ X_L = \omega L 
+%                     = 2 \pi f L 
+%                     = 2 \pi \cdot 318,3098862 \cdot 10,0 \cdot 10^{-3} 
+%                     = 20 \ \Omega $
+                    
+%                     $ X_C = \dfrac{1}{\omega C} 
+%                     = \dfrac{1}{2 \pi f C} 
+%                     = \dfrac{1}{2 \pi \cdot 318,3098862 \cdot 100 \cdot 10^{-6}} 
+%                     = 5 \ \Omega $
+                    
+%                     $ Z = \sqrt{R^2 + \left( X_L - X_C \right)^2} 
+%                     = \sqrt{10,0^2 + \left( 20 - 5 \right)^2} 
+%                     = 5 \sqrt{13} \ \Omega $
+                    
+%                     $ I_{rms} = \dfrac{\Delta V_{rms}}{Z} = \dfrac{50,0}{5 \sqrt{13}} = \dfrac{10}{\sqrt{13}} $ A
+                    
+%                     $ V_{R,rms} = I_{rms} R = \dfrac{10}{\sqrt{13}} \cdot 10,0 = \dfrac{100}{\sqrt{13}} $ V
+                    
+%                     $ U = P_{av} T 
+%                     = V_{R,rms} I_{rms} \dfrac{1}{f} 
+%                     = \dfrac{100}{\sqrt{13}} \cdot \dfrac{10}{\sqrt{13}} \cdot \dfrac{1}{318,3098862} 
+%                     = 0,241660973 $ J $ 
+%                     \approx 0,242 $ J
+% \end{description}
+
+% \vspace{1cm}

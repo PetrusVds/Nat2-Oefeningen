@@ -1,0 +1,181 @@
+% \textbf{\underline{OZ 7 - Inductantie - Oefening 5:}}
+% \vspace{0.5cm}
+
+% Beschouw de twee ideale spoelen met inductanties $ L_1 $ en $ L_2 $. Bepaal de equivalente inductantie $ L_{eq} $ als de twee spoelen
+
+% \begin{enumerate}[(a)]
+%     \item in serie worden geplaatst ver van elkaar zodat ze elkaar niet beïnvloeden.
+%     \item in serie worden geplaatst zodat ze een wederzijdse inductantie $ M $ hebben.
+%     \item in parallel worden geplaatst ver van elkaar zodat ze elkaar niet beïnvloeden.
+%     \item in parallel worden geplaatst zodat ze een wederzijdse inductantie $ M $ hebben.
+% \end{enumerate}
+
+% \begin{description}[labelwidth=1.5cm, leftmargin=!]
+%     \item[Geg. :]   $ L_1 $; $ L_2 $; $ M $;
+% \end{description}
+
+% \begin{enumerate}[(a)]
+%     \item
+%         \begin{description}[labelwidth=1.5cm, leftmargin=!]
+%             \item[Gevr. :]  $ L_{eq} $ in serie;
+%             \item[Opl. :]   $ i = i_1 = i_2 $
+                            
+%                             \vspace{0.5cm}
+            
+%                             $ v_1 = L_1 \dfrac{di_1}{dt}
+%                             = L_1 \dfrac{di}{dt} $
+                            
+%                             \vspace{0.5cm}
+            
+%                             $ v_2 = L_2 \dfrac{di_2}{dt}
+%                             = L_2 \dfrac{di}{dt} $
+                            
+%                             \vspace{0.5cm}
+                            
+%                             $ v_{eq} = v_1 + v_2 $
+                            
+%                             \hspace{-0.57cm} $ \Leftrightarrow 
+%                             L_{eq} \dfrac{di}{dt} = L_1 \dfrac{di}{dt} + L_2 \dfrac{di}{dt} $
+                            
+%                             \hspace{-0.57cm} $ \Leftrightarrow 
+%                             L_{eq} = L_1 + L_2 $
+%         \end{description}
+%     \item
+%         \begin{description}[labelwidth=1.5cm, leftmargin=!]
+%             \item[Gevr. :]  $ L_{eq} $ in serie met wederzijdse inductantie;
+%             \item[Opl. :]   $ i = i_1 = i_2 $
+                            
+%                             \vspace{0.5cm}
+            
+%                             $ v_1 = L_1 \dfrac{di_1}{dt} + M \dfrac{di_2}{dt} 
+%                             = L_1 \dfrac{di}{dt} + M \dfrac{di}{dt} $
+                            
+%                             \vspace{0.5cm}
+            
+%                             $ v_2 = L_2 \dfrac{di_2}{dt} + M \dfrac{di_1}{dt} 
+%                             = L_2 \dfrac{di}{dt} + M \dfrac{di}{dt} $
+                            
+%                             \vspace{0.5cm}
+                            
+%                             $ v_{eq} = v_1 + v_2 $
+                            
+%                             \hspace{-0.57cm} $ \Leftrightarrow 
+%                             L_{eq} \dfrac{di}{dt} = L_1 \dfrac{di}{dt} + M \dfrac{di}{dt} + L_2 \dfrac{di}{dt} + M \dfrac{di}{dt} $
+                            
+%                             \hspace{-0.57cm} $ \Leftrightarrow 
+%                             L_{eq} = L_1 + M + L_2 + M = L_1 + L_2 + 2M $
+%         \end{description} 
+%     \item
+%         \begin{description}[labelwidth=1.5cm, leftmargin=!]
+%             \item[Gevr. :]  $ L_{eq} $ in parallel;
+%             \item[Opl. :]   $ v_1 = L_1 \dfrac{di_1}{dt} $
+                            
+%                             \hspace{-0.57cm} $ \Leftrightarrow 
+%                             \dfrac{di_1}{dt} = \dfrac{v_1}{L_1} $
+                            
+%                             \vspace{0.5cm}
+            
+%                             $ v_2 = L_2 \dfrac{di_2}{dt} $
+                            
+%                             \hspace{-0.57cm} $ \Leftrightarrow 
+%                             \dfrac{di_2}{dt} = \dfrac{v_2}{L_2} $
+                            
+%                             \vspace{0.5cm}
+                            
+%                             $ i = i_1 + i_2 $
+                            
+%                             \hspace{-0.57cm} $ \Rightarrow 
+%                             \dfrac{di}{dt} = \dfrac{di_1}{dt} + \dfrac{di_2}{dt}$
+                            
+%                             \hspace{-0.57cm} $ \Leftrightarrow 
+%                             \dfrac{v}{L_{eq}} = \dfrac{v_1}{L_1} + \dfrac{v_2}{L_2}
+%                             $
+                            
+%                             \vspace{0.5cm}
+                            
+%                             $ v = v_1 = v_2 $
+                            
+%                             \hspace{-0.57cm} $ \Rightarrow 
+%                             \dfrac{1}{L_{eq}} = \dfrac{1}{L_1} + \dfrac{1}{L_2}
+%                             $
+                            
+%                             \hspace{-0.57cm} $ \Leftrightarrow 
+%                             L_{eq} = \dfrac{1}{\dfrac{1}{L_1} + \dfrac{1}{L_2}}
+%                             $
+%         \end{description}
+%     \item
+%         \begin{description}[labelwidth=1.5cm, leftmargin=!]
+%             \item[Gevr. :]  $ L_{eq} $ in parallel met wederzijdse inductantie;
+%             \item[Opl. :]   \def\arraystretch{2.2}
+%                             $ \left\{\begin{array}{l}
+%                                 v_1 = L_1 \dfrac{di_1}{dt} + M \dfrac{di_2}{dt} \\
+%                                 v_2 = L_2 \dfrac{di_2}{dt} + M \dfrac{di_1}{dt}
+%                             \end{array}\right. $
+                            
+%                             \hspace{-0.57cm} $ \Leftrightarrow 
+%                             \left\{\begin{array}{l}
+%                                 \dfrac{di_1}{dt} = \dfrac{v_1}{L_1} - \dfrac{M}{L_1} \dfrac{v_2 - \dfrac{M v_1}{L_1}}{L_2 - \dfrac{M^2}{L_1}} \\
+%                                 \dfrac{di_2}{dt} = \dfrac{v_2 - \dfrac{M v_1}{L_1}}{L_2 - \dfrac{M^2}{L_1}}
+%                             \end{array}\right. $
+                            
+%                             \vspace{0.5cm}
+                            
+%                             $ i = i_1 + i_2 $
+                            
+%                             \hspace{-0.57cm} $ \Rightarrow 
+%                             \dfrac{di}{dt} = \dfrac{di_1}{dt} + \dfrac{di_2}{dt}$
+                            
+%                             \hspace{-0.57cm} $ \Leftrightarrow 
+%                             \dfrac{v}{L_{eq}} = \dfrac{v_1}{L_1} - \dfrac{M}{L_1} \dfrac{v_2 - \dfrac{M v_1}{L_1}}{L_2 - \dfrac{M^2}{L_1}} + \dfrac{v_2 - \dfrac{M v_1}{L_1}}{L_2 - \dfrac{M^2}{L_1}}
+%                             $
+                            
+%                             \hspace{-0.57cm} $ \Leftrightarrow 
+%                             \dfrac{v}{L_{eq}} = \dfrac{v_1}{L_1} + (1 - \dfrac{M}{L_1}) \dfrac{v_2 - \dfrac{M v_1}{L_1}}{L_2 - \dfrac{M^2}{L_1}}
+%                             $
+                            
+%                             \vspace{0.5cm}
+                            
+%                             $ v = v_1 = v_2 $
+                            
+%                             \hspace{-0.57cm} $ \Rightarrow 
+%                             \dfrac{1}{L_{eq}} = \dfrac{1}{L_1} + (1 - \dfrac{M}{L_1}) \dfrac{1 - \dfrac{M}{L_1}}{L_2 - \dfrac{M^2}{L_1}}
+%                             $
+                            
+%                             \hspace{0.6cm} $ 
+%                             = \dfrac{1}{L_1} + \dfrac{\left( 1 - \dfrac{M}{L_1} \right)^2}{L_2 - \dfrac{M^2}{L_1}}
+%                             $
+                            
+%                             \hspace{0.6cm} $ 
+%                             = \dfrac{L_2 - \dfrac{M^2}{L_1}}{L_1 \left( L_2 - \dfrac{M^2}{L_1} \right)} + \dfrac{L_1 \left( 1 - \dfrac{M}{L_1} \right)^2}{L_1 \left( L_2 - \dfrac{M^2}{L_1} \right)}
+%                             $
+                            
+%                             \hspace{0.6cm} $ 
+%                             = \dfrac{L_2 - \dfrac{M^2}{L_1} + L_1 \left( 1 - \dfrac{M}{L_1} \right)^2}{L_1 \left( L_2 - \dfrac{M^2}{L_1} \right)}
+%                             $
+                            
+%                             \hspace{0.6cm} $ 
+%                             = \dfrac{L_2 - \dfrac{M^2}{L_1} + L_1 \left( 1 - \dfrac{M}{L_1} \right)^2}{L_1 L_2 - M^2}
+%                             $
+                            
+%                             \hspace{0.6cm} $ 
+%                             = \dfrac{L_2 - \dfrac{M^2}{L_1} + L_1 \left( 1 - 2\dfrac{M}{L_1} + \left( \dfrac{M}{L_1} \right)^2\right)}{L_1 L_2 - M^2}
+%                             $
+                            
+%                             \hspace{0.6cm} $ 
+%                             = \dfrac{L_2 - \dfrac{M^2}{L_1} + L_1 - 2M + \dfrac{M^2}{L_1}}{L_1 L_2 - M^2}
+%                             $
+                            
+%                             \hspace{0.6cm} $ 
+%                             = \dfrac{L_2 - \dfrac{M^2}{L_1} + L_1 - 2M + \dfrac{M^2}{L_1}}{L_1 L_2 - M^2}
+%                             $
+                            
+%                             \hspace{0.6cm} $ 
+%                             = \dfrac{L_1 + L_2 - 2M}{L_1 L_2 - M^2}
+%                             $
+                            
+%                             \hspace{-0.57cm} $ \Rightarrow 
+%                             L_{eq} = \dfrac{L_1 L_2 - M^2}{L_1 + L_2 - 2M} $
+%         \end{description}
+% \end{enumerate}
+
+% \vspace{1cm}

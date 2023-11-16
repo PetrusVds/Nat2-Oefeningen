@@ -1,0 +1,29 @@
+% \textbf{\underline{OZ 7 - Inductantie - Oefening 2:}}
+% \vspace{0.5cm}
+
+% Twee spoelen worden dicht bij elkaar geplaatst. Door de eerste spoel loopt een tijdsvariërende stroom $ I(t) = I_0 e^{-\alpha t} \sin{\left( \omega t \right)} $ met $ I_0 = 5,00 $ A, $ \alpha = 0,0250 $ Hz en $ \omega = 377 $ rad/s. Op $ t = 0,800 $ s is de geïnduceerde spanning in de tweede spoel -3,20 V. Wat is de wederzijdse inductantie van de twee spoelen?
+
+% \begin{description}[labelwidth=1.5cm, leftmargin=!]
+%     \item[Geg. :]   $ I_1(t) = I_0 e^{-\alpha t} \sin{\left( \omega t \right)} $; $ I_0 = 5,00 $ A; $ \alpha = 0,0250 $ Hz; $ \omega = 377 $ rad/s; $ t = 0,800 $ s; \\ $ V_2 = -3,20 $ V;
+%     \item[Gevr. :]  $ M $;
+%     \item[Opl. :]   $ V_2 = L_2 \dfrac{dI_2}{dt} + M \dfrac{dI_1}{dt} $
+    
+%                     $ I_2 = 0 \Rightarrow \dfrac{dI_2}{dt} = 0 $
+    
+%                     $ \dfrac{dI_1}{dt} = \dfrac{d}{dt}{\left( I_0 e^{-\alpha t} \sin{\left( \omega t \right)} \right)} 
+%                     = I_0 \dfrac{d}{dt}{\left( e^{-\alpha t} \sin{\left( \omega t \right)} \right)} 
+%                     = I_0 \left( \dfrac{d}{dt}{\left( e^{-\alpha t} \right)} \sin{\left( \omega t \right)} + e^{-\alpha t} \dfrac{d}{dt}{\left( \sin{\left( \omega t \right)} \right)} \right) $
+                    
+%                     \hspace{0.55cm} $ 
+%                     = I_0 \left( -\alpha e^{-\alpha t} \sin{\left( \omega t \right)} + \omega e^{-\alpha t} \cos{\left( \omega t \right)} \right)
+%                     = I_0 e^{-\alpha t} \left( -\alpha \sin{\left( \omega t \right)} + \omega \cos{\left( \omega t \right)} \right) $
+                    
+%                     $ \dfrac{dI_1}{dt}{\left( 0,800 \right)} = 5,00 \cdot e^{-0,0250 \cdot 0,800} \left( -0,0250 \cdot \sin{\left( 377 \cdot 0,800 \right)} + 377 \cdot \cos{\left( 377 \cdot 0,800 \right)} \right) $
+                    
+%                     \hspace{1cm} $ 
+%                     = 1847,62698 $ A/s
+                    
+%                     $ M = \dfrac{V_2}{\dfrac{dI_1}{dt}} = \dfrac{-3,20}{1847,62698} = -0,00173 $ H $ \approx -1,73 $ mH
+% \end{description}
+
+% \vspace{1cm}

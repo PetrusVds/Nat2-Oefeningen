@@ -1,0 +1,46 @@
+\textbf{\underline{OZ 5 - Magnetische inductie en de wet van Faraday - Oefening 3:}}
+\vspace{0.5cm}
+
+Stel een metalen ring die vrij kan expanderen en samentrekken. De ring wordt in een constant magneetveld $\Vec{B}_0$ gebracht. Het magneetveld staat loodrecht op het vlak van de ring. De ring zal expanderen met een straal die lineair in de tijd toeneemt:
+\begin{equation*}
+    r(t) = r_0 + \alpha t.
+\end{equation*}
+De weerstand zal per lengte-eenheid van de ring toenemen volgens de empirische vergelijking:
+\begin{equation*}
+    R(\ell)  = R_{0}\ell(1 + \beta t)
+\end{equation*}
+Bereken de geïnduceerde stroom in de ring in functie van de tijd. Specificeer zowel de zin als de grootte van de stroom.
+
+\begin{description}[labelwidth=1.5cm, leftmargin=!]
+    \item[Geg. :]  $r(t)$, $R(\ell)$, $\Vec{B}_0$
+    \item[Gevr. :]  $I_{\text{ind}}$
+    \item[Opl. :] 
+        We gebruiken de wet van Faraday
+        \begin{equation*}
+            \oint \Vec{E}_{\text{ind}} \cdot d\ell = \frac{d\Phi_B}{dt} 
+        \end{equation*}
+        waarbij
+        \begin{align*}
+            E_{\text{ind}} 
+                &= \rho J \\
+                &= \left(\frac{A}{\ell}R(\ell)\right)\frac{I_{\text{ind}}}{A} \\ 
+                &= I_{\text{ind}}\left(R_{0}(1 + \beta t)\right)
+        \end{align*} 
+        We krijgen nu
+        \begin{equation*}
+                I_{\text{ind}}\left(R_{0}(1 + \beta t)\right) \int_0^{2\pi r(t)} d\ell = \frac{d\Phi_B}{dt}
+        \end{equation*}
+        waaruit volgt
+        \begin{align*}
+            I_{\text{ind}} 
+                &= \frac{\frac{d}{dt} \left( B_0 A \right)}{\left(R_{0}(1 + \beta t)\right) \int_0^{2\pi r(t)} d\ell } \\
+                &= \frac{\frac{d}{dt} \left( B_0 A \right)}{\left(R_{0}(1 + \beta t)\right) \left(2\pi r(t)\right) } \\
+                &= \frac{\frac{d}{dt} \left(B_0 \pi r(t)^2 \right)}{\left(R_{0}(1 + \beta t)\right) \left(2\pi r(t)\right)} \\
+                &= \frac{B_0 \left(\frac{d}{dt} \pi r(t)^2\right)}{\left(R_{0}(1 + \beta t)\right)\left(2\pi r(t)\right)} \\
+                &= \frac{B_0 \left(2\pi r(t)\right) \left(\frac{d}{dt} \alpha t\right)}{\left(R_{0}(1 + \beta t)\right)\left(2\pi r(t)\right)} \\
+                &= \frac{B_0 \alpha}{\left(R_{0}(1 + \beta t)\right)}
+        \end{align*}
+        De stroom zal wijzersin gaan als $\alpha > 0$.
+\end{description}
+
+\vspace{1cm}

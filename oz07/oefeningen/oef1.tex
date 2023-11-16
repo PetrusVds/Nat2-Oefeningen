@@ -1,0 +1,70 @@
+% \textbf{\underline{OZ 7 - Inductantie - Oefening 1:}}
+% \vspace{0.5cm}
+
+% Beschouw het circuit in Figuur 7.1, waarbij $ \varepsilon = 6,00 $ V, $ L = 8,00 $ mH, en $ R = 4,00 \ \Omega $.
+
+% \begin{enumerate}[(a)]
+%     \item Wat is de inductieve tijdsconstante $ \tau $ van het circuit?
+%     \item Bereken de stroom in het circuit 250 $ \mu $s nadat de schakelaar gesloten werd.
+%     \item Wat is de uiteindelijke (steady-state) stroom?
+%     \item Hoe lang duurt het voordat de stroom 80 \% van zijn maximale waarde heeft bereikt?
+% \end{enumerate}
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=6cm]{oz07/resources/oef-1-opgave.png}
+    
+%     \textbf{Figuur 6.1}
+% \end{figure}
+
+% \begin{description}[labelwidth=1.5cm, leftmargin=!]
+%     \item[Geg. :]   $ \varepsilon = 6,00 $ V; $ L = 8,00 $ mH; $ R = 4,00 \ \Omega $;
+% \end{description}
+
+% \begin{enumerate}[(a)]
+%     \item 
+%         \begin{description}[labelwidth=1.5cm, leftmargin=!]
+%             \item[Gevr. :]  $ \tau $;
+%             \item[Opl. :]   $ \tau = \dfrac{L}{R} = \dfrac{8,00 \cdot 10^{-3}}{4,00} = 0,00200 $ s
+%         \end{description}
+%     \item 
+%         \begin{description}[labelwidth=1.5cm, leftmargin=!]
+%             \item[Gevr. :]  $ I_{250 \mu\textrm{s}} $;
+%             \item[Opl. :]   $ I = I_{max} \cdot \left(1 - e^{-t/\tau} \right) $ 
+            
+%                             $ I_{max} = \dfrac{\varepsilon}{R} = \dfrac{6,00}{5,00} = 1,50 $ A
+                            
+%                             $ I = 1,50 \cdot \left(1 - e^{-500t} \right) $ 
+                            
+%                             $ I_{250 \mu\textrm{s}} = 1,50 \cdot \left(1 - e^{-500 \cdot 250 \cdot 10^{-6}} \right) 
+%                             = 0,17625 $ A $ \approx 0,176 $ A
+%         \end{description}
+%     \item 
+%         \begin{description}[labelwidth=1.5cm, leftmargin=!]
+%             \item[Gevr. :]  $ I_{250 \mu\textrm{s}} $;
+%             \item[Opl. :]   $ I_{ss} = \lim_{t \to +\infty}{I_{max} \cdot \left(1 - e^{-t/\tau} \right)} = I_{max} 
+%                             = 1,50 $ A
+%         \end{description}
+%     \item 
+%         \begin{description}[labelwidth=1.5cm, leftmargin=!]
+%             \item[Gevr. :]  $ t_{80 \%} $;
+%             \item[Opl. :]   $ I = 0,80 \cdot I_{max} $
+            
+%                             \hspace{-0.57cm} $ \Leftrightarrow 
+%                             I_{max} \cdot \left(1 - e^{-t_{80 \%}/\tau} \right) = 0,80 \cdot I_{max} $
+            
+%                             \hspace{-0.57cm} $ \Leftrightarrow 
+%                             1 - e^{-t_{80 \%}/\tau} = 0,80 $
+            
+%                             \hspace{-0.57cm} $ \Leftrightarrow 
+%                             e^{-t_{80 \%}/\tau} = 0,20 $
+            
+%                             \hspace{-0.57cm} $ \Leftrightarrow 
+%                             -t_{80 \%}/\tau = \ln{0,20} $
+            
+%                             \hspace{-0.57cm} $ \Leftrightarrow 
+%                             t_{80 \%} = - \ln{0,20} \cdot \tau = - \ln{0,20} \cdot 0,00200 = 0,0032189 $ s $ \approx 3,22 $ ms
+%         \end{description}
+% \end{enumerate}
+
+% \vspace{1cm}

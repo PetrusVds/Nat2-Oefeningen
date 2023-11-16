@@ -1,0 +1,71 @@
+\textbf{\underline{OZ 1 - Herhaling - Oefening 3:}}
+\vspace{0.5cm}
+
+Een klein rigide object draagt een positieve lading en een negatieve lading van $3,50 $nC. De oriëntatie van het object is zo dat de positieve lading zich op ($-1,20 $mm,
+$1,10 $mm) bevindt en de negatieve lading op ($1,40 $mm, $-1,30$ mm). Het object wordt geplaatst in
+een elektrisch veld $\Vec{E} = (7800\hat{i} - 4900\hat{j})$ N/C.
+
+\begin{enumerate}[(a)]
+    \item Wat is het elektrisch dipoolmoment van het object?
+    \item Wat is de torsie die het elektrisch veld op het object uitoefent?
+    \item Wat is de potentiële energie van het object-veld systeem als het object in deze oriëntatie blijft?
+    \item Als je aanneemt dat de oriëntatie van het object kan veranderen, wat is het verschil tussen maximum en minimum potentiële energie van het systeem?
+\end{enumerate}
+
+% \begin{description}[labelwidth=1.5cm, leftmargin=!]
+%     \item[Geg. :]  
+%     \item[Gevr. :]  
+%     \item[Opl. :]   
+% \end{description}
+
+\begin{enumerate}[(a)]
+    \item 
+        \begin{description}[labelwidth=1.5cm, leftmargin=!]
+            \item[Geg. :]  $q = -3.50$nC, $\Vec{r}_{+} = (-1.20\text{mm}, 1.10\text{mm})$, $\Vec{r}_{-} = (1.40\text{mm}, -1.30\text{mm})$
+            \item[Gevr. :] $\Vec{p}$ ?
+            \item[Opl. :]  $\Vec{p} = q\Vec{\ell} = q(\Vec{r}_{-} - \Vec{r}_{+}) 
+                                  % = q((1.40\hat{i} - 1.30\hat{j}) - (-1.20\hat{i} + 1.10\hat{j})) 
+                                    = q(2.60\hat{i} + - 2.40\hat{j}) \approx (-9.10\hat{i} + 8.40\hat{j}) \cdot 10^{-12}$ Cm
+        \end{description}
+        
+    \item 
+        \begin{description}[labelwidth=1.5cm, leftmargin=!]
+            \item[Geg. :]  $\Vec{p} = (-9.10\hat{i} + 8.40\hat{j}) \cdot 10^{-12}$ Cm, $\Vec{E} = (7800\hat{i} - 4900\hat{j})$ N/C
+            \item[Gevr. :] $\Vec{\tau}$ ?
+            \item[Opl. :]  $\Vec{\tau} = \Vec{p} \times \Vec{E} = 
+                            \begin{vmatrix}
+                                \hat{i} & \hat{j} & \hat{k}\\ 
+                                p_x & p_y & p_z\\
+                                E_x & E_y & E_z  
+                            \end{vmatrix} 
+                            = 
+                            \begin{vmatrix}
+                                \hat{i} & \hat{j} & \hat{k}\\ 
+                                -9.10 \cdot 10^{-12} & 8.40 \cdot 10^{-12} & 0\\
+                                7800 & -4900 & 0  
+                            \end{vmatrix} 
+                            % =
+                            % \begin{vmatrix}
+                            %     -9.10 \cdot 10^{-12} & 8.40 \cdot 10^{-12}\\
+                            %     7800 & -4900
+                            % \end{vmatrix}\hat{k}
+                            \approx -2.09 \cdot 10^{-8} \text{ Nm } \hat{k}$
+        \end{description}
+        
+    \item 
+        \begin{description}[labelwidth=1.5cm, leftmargin=!]
+            \item[Geg. :]  $\Vec{p} = (-9.10\hat{i} + 8.40\hat{j}) \cdot 10^{-12}$ Cm, $\Vec{E} = (7800\hat{i} - 4900\hat{j})$ N/C
+            \item[Gevr. :]  $U$?
+            \item[Opl. :]   $U = -\Vec{p} \cdot \Vec{E} = -\sum_{i=1}^n p_iE_i \approx 1.12 \cdot 10^{-7}$Nm 
+        \end{description}
+
+    \item 
+        \begin{description}[labelwidth=1.5cm, leftmargin=!]
+            \item[Geg. :]  $\Vec{p} = (-9.10\hat{i} + 8.40\hat{j}) \cdot 10^{-12}$ Cm, $\Vec{E} = (7800\hat{i} - 4900\hat{j})$ N/C
+            \item[Gevr. :]  $\Delta U$ ?
+            \item[Opl. :]   $U_{\text{max}} = -pE\cos(0^{\circ}) = - pE$ \\
+                            \hspace{0.5cm}$U_{\text{min}} = -pE\cos(180^{\circ}) = pE$ \\ 
+                            \hspace{0.5cm}$\Delta U = U_{\text{max}} - U_{\text{min}} = -2pE \approx 2.28 \cdot 10^{-7}$Nm
+        \end{description}
+
+\end{enumerate}

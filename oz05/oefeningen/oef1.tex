@@ -1,0 +1,50 @@
+\textbf{\underline{OZ 5 - Magnetische inductie en de wet van Faraday - Oefening 1:}}
+\vspace{0.5cm}
+
+\begin{minipage}{0.76\textwidth}
+    Een segment van een draad met lengte $d$ draagt een stroom $I$, zoals aangegeven in de figuur hiernaast.
+
+    \begin{enumerate}[(a)]
+        \item 
+            Toon aan dat voor punten op de positieve $x$-as, zoals het punt $Q$, het magnetisch veld $\Vec{B}$ nul is.
+        \item 
+            Bepaal de uitdrukking van het magnetisch veld $\Vec{B}$ punten op de positieve $y$-as, zoals het punt $P$.
+    \end{enumerate}
+\end{minipage}
+\begin{minipage}{0.2\textwidth}
+    \begin{center}
+        \includegraphics[scale = 0.35]{oz05/resources/Oz5Oef1.png}
+    \end{center}
+\end{minipage}
+
+\begin{enumerate}[(a)]
+    \item 
+        \begin{description}[labelwidth=1.5cm, leftmargin=!]
+            \item[Geg. :]  $Q$, $d$, $I$
+            \item[Gevr. :] $\Vec{B}$
+            \item[Opl. :]  
+                We gebruiken de wet van Biot-Savart
+                \begin{equation*}
+                    \Vec{B} = \frac{\mu_0}{4\pi} \int \frac{Id\Vec{\ell} \times \hat{r}}{r^2} = \Vec{0}
+                \end{equation*}
+                waarbij $r$ en elke infinitesmiale $d\ell$ parallel zijn.
+        \end{description}
+    \item 
+        \begin{description}[labelwidth=1.5cm, leftmargin=!]
+            \item[Geg. :]  $P$, $d$, $I$
+            \item[Gevr. :] $\Vec{B}$
+            \item[Opl. :]   
+                We gebruiken de wet van Biot-Savart
+                \begin{align*}
+                    \Vec{B} 
+                        &= \frac{\mu_0}{4\pi} \int \frac{Id\Vec{\ell} \times \hat{r}}{r^2} \\
+                        &= \frac{\mu_0I}{4\pi} \int \frac{d\Vec{\ell} \times \Vec{r}}{r^3} \\
+                        &= \frac{\mu_0I}{4\pi} \int \frac{dx\hat{i}\times(-x\hat{i} + y\hat{j})}{(x^2 + y^2)^{\frac{3}{2}}} \\
+                        &= \frac{\mu_0Iy}{4\pi} \int_0^d \frac{dx}{(x^2 + y^2)^{\frac{3}{2}}} \ (\hat{k}) \\
+                        &= \frac{\mu_0Iy}{4\pi} \left[ \frac{x}{y^2(x^2 + y^2)^{\frac{1}{2}}} \right]_0^d \ (\hat{k}) \\
+                        &= \frac{\mu_0I}{4\pi y} \frac{d}{(d^2 + y^2)^{\frac{1}{2}}} \ (\hat{k}) \\
+                \end{align*}
+        \end{description}
+\end{enumerate}
+    
+\vspace{1cm}

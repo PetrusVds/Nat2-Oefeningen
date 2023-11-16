@@ -1,0 +1,44 @@
+\textbf{\underline{OZ 2 - Magnetische velden - Oefening 5:}}
+\vspace{0.5cm}
+
+Bereken het magnetisch dipoolmoment van een roterende geladen isolerende schijf
+met straal $R$, waarbij de schijf rond zijn symmetrieas draait met een hoeksnelheid $\omega$
+en de ladingsdichtheid varieert met de straal $r$ volgens $ \sigma = c \cdot r$, met $c$ een constante.
+
+% \begin{description}[labelwidth=1.5cm, leftmargin=!]
+%     \item[Geg. :]   
+%     \item[Gevr. :]  
+%     \item[Opl. :]  
+% \end{description}
+
+
+\begin{description}[labelwidth=1.5cm, leftmargin=!]
+    \item[Geg. :]   $R,\omega, r, \sigma$
+    \item[Gevr. :]  $\mu$
+    \item[Opl. :]   
+    
+                    We stellen de formule van het infinitesimale oppervlakte op
+                    \begin{align}
+                         dA &= 2\pi rdr \nonumber \\ 
+                        \intertext{waaruit we de formule voor de infinitesimale lading kunnen afleiden}
+                         dq &= \sigma dA \nonumber \\ 
+                            &= c2\pi r^2dr \\
+                        \intertext{We weten de formule van de periode van de cirkelbeweging}
+                          T &= \dfrac{2\pi}{\omega}  \\ 
+                        \intertext{Uit (1) en (2) vinden we}
+                         dI &= \dfrac{dq}{dt} \nonumber \\ 
+                            &= \dfrac{dq}{T} \nonumber \\ 
+                            &= \omega cr^2dr \nonumber \\
+                        \intertext{waaruit we de infinitesimale magnetisch dipoolmoment kunnen halen}
+                     d\mu &= dI(\pi r^2) \nonumber \\ 
+                            % &= (\omega cr^2dr)(\pi r^2) \\ 
+                            &= \pi\omega cr^4 dr \nonumber
+                        \intertext{en dus het magnetisch dipoolmoment}
+                        \mu &= \int_0^R d\mu \nonumber \\ 
+                            &= \pi\omega \int_0^R r^4 dr \nonumber \\ 
+                            &= \pi\omega c\tfrac{R^5}{5} \nonumber
+                    \end{align}
+\end{description} 
+
+\vspace{1cm}
+

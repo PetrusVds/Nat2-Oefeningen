@@ -1,0 +1,91 @@
+\textbf{\underline{OZ 1 - Herhaling - Oefening 3:}}
+\vspace{0.5cm}
+
+\textbf{Wet van Gauss:} Een erg lange massieve niet-geleidende cilinder met straal $ R_1 $ is homogeen geladen met een ladingsdichtheid $ \rho_E $. De cilinder wordt omgeven door een concentrische cilinderbuis met een inwendige straal $ R_2 $ en een uitwendige straal $ R_3 $. De buitenste holle cilinder heeft eveneens een homogene ladingsdichtheid $ \rho_E $. Bereken het elektrisch veld als functie van de afstand $ r $ tot het middelpunt van de cilinders voor (a) $ 0 < r < R_1 $, (b) $ R_1 < r < R_2 $, (c) $ R_2 < r < R_3 $, (d) $ r < R_3 $.
+
+\vspace{0.5cm}
+
+NOTE: Identiek aan OZ6 - Oefening 6 van \href{https://www.overleaf.com/project/6252f4fc1fe198443959eb75#section*.39}{\underline{\textcolor{blue}{Natuurkunde I}}}
+
+\begin{description}
+    \item[Geg. :]   $ \rho_E $;
+\end{description}
+
+\begin{enumerate}[(a)]
+    \item
+        \begin{description}[labelwidth=1.5cm, leftmargin=!]
+            \item[Gevr. :]  $ 0 < r < R_1 \Rightarrow E(r) = \ ? $;
+            \item[Opl. :]   $ q_{in} = \pi r^2 l \rho_E $
+                            \hspace{2cm}
+                            $ A = 2 \pi r l $
+                            
+                            \vspace{0.3cm}
+                            
+                            $ \oint{\vec{E} d\vec{A}} = \frac{q_{in}}{\varepsilon_0} $
+                            
+                            \hspace{-0.57cm} $ \Leftrightarrow 
+                            E (2 \pi r l) = \frac{\pi r^2 l \rho_E}{\varepsilon_0} $
+                            
+                            \hspace{-0.57cm} $ \Leftrightarrow 
+                            E = \frac{\rho_E}{2 \varepsilon_0} r $
+        \end{description}
+    \item
+        \begin{description}[labelwidth=1.5cm, leftmargin=!]
+            \item[Gevr. :]  $ R_1 < r < R_2 \Rightarrow E(r) = \ ? $;
+            \item[Opl. :]   $ q_{in} = \pi R_1^2 l \rho_E $
+                            \hspace{2cm}
+                            $ A = 2 \pi r l $
+                            
+                            \vspace{0.3cm}
+                            
+                            $ \oint{\vec{E} d\vec{A}} = \frac{q_{in}}{\varepsilon_0} $
+                            
+                            \hspace{-0.57cm} $ \Leftrightarrow 
+                            E (2 \pi r l) = \frac{\pi R_1^2 l \rho_E}{\varepsilon_0} $
+                            
+                            \hspace{-0.57cm} $ \Leftrightarrow 
+                            E = \frac{\rho_E}{2 \varepsilon_0} \frac{R_1^2}{r} $
+        \end{description}
+    \item
+        \begin{description}[labelwidth=1.5cm, leftmargin=!]
+            \item[Gevr. :]  $ R_2 < r < R_3 \Rightarrow E(r) = \ ? $;
+            \item[Opl. :]   $ q_{in} = \pi R_1^2 l \rho_E + (\pi r^2 l - \pi R_2^2 l) \rho_E $
+                            \hspace{2cm}
+                            $ A = 2 \pi r l $
+                            
+                            \hspace{0.43cm} $ = \pi l \rho_E (r^2 + R_1^2 - R_2^2) $
+                            
+                            \vspace{0.3cm}
+                            
+                            $ \oint{\vec{E} d\vec{A}} = \frac{q_{in}}{\varepsilon_0} $
+                            
+                            \hspace{-0.57cm} $ \Leftrightarrow 
+                            E (2 \pi r l) = \frac{\pi l \rho_E (r^2 + R_1^2 - R_2^2)}{\varepsilon_0} $
+                            
+                            \hspace{-0.57cm} $ \Leftrightarrow 
+                            E = \frac{\rho_E (r^2 + R_1^2 - R_2^2)}{2 \varepsilon_0 r} 
+                            = \frac{\rho_E}{2 \varepsilon_0} (r + \frac{R_1^2 - R_2^2}{r}) $
+        \end{description}
+    \item
+        \begin{description}[labelwidth=1.5cm, leftmargin=!]
+            \item[Gevr. :]  $ R_3 < r \Rightarrow E(r) = \ ? $;
+            \item[Opl. :]   $ q_{in} = \pi R_1^2 l \rho_E + (\pi R_3^2 l - \pi R_2^2 l) \rho_E $
+                            \hspace{2cm}
+                            $ A = 2 \pi r l $
+                            
+                            \hspace{0.43cm} $ = \pi l \rho_E (R_1^2 - R_2^2 + R_3^3) $
+                            
+                            \vspace{0.3cm}
+                            
+                            $ \oint{\vec{E} d\vec{A}} = \frac{q_{in}}{\varepsilon_0} $
+                            
+                            \hspace{-0.57cm} $ \Leftrightarrow 
+                            E (2 \pi r l) = \frac{\pi l \rho_E (R_1^2 - R_2^2 + R_3^3)}{\varepsilon_0} $
+                            
+                            \hspace{-0.57cm} $ \Leftrightarrow 
+                            E = \frac{\rho_E (R_1^2 - R_2^2 + R_3^3)}{2 \varepsilon_0 r} 
+                            = \frac{\rho_E}{2 \varepsilon_0} \frac{R_1^2 - R_2^2 + R_3^2}{r} $
+        \end{description}
+\end{enumerate}
+
+\vspace{1cm}

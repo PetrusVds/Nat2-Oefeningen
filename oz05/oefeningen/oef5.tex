@@ -1,0 +1,91 @@
+\textbf{\underline{OZ 5 - Magnetische inductie en de wet van Faraday - Oefening 5:}}
+\vspace{0.5cm}
+
+Een geleidende staaf (massa $m$, weerstand $R$) rust op twee wrijvingsloze en weerstandsloze parallelle rails (afstand $\ell$ tussen de twee rails) in een uniform magnetisch veld $\Vec{B}$, zie figuur hieronder. Op tijdstip $t = 0$ is de staaf in rust en is er een spanningsbron verbonden aan de punten $a$ en $b$. 
+
+\begin{enumerate}[(a)]
+    \item 
+        Bepaal de snelheid van de staaf in functie van de tijd als een constante stroombron wordt gebruikt.
+    \item 
+        Bepaal de snelheid van de staaf in functie van de tijd als constante spanningsbron (emf) gebruikt wordt.
+    \item 
+        Bereikt de staaf een eindige snelheid? Indien ja, wat is deze snelheid dan?
+\end{enumerate}
+
+\begin{center}
+    \includegraphics[scale = 0.35]{oz05/resources/Oz5Oef5.png}
+\end{center}
+
+\begin{enumerate}[(a)]
+    \item 
+        \begin{description}[labelwidth=1.5cm, leftmargin=!]
+            \item[Geg. :]  $m$, $R$, $\ell$ $B$
+            \item[Gevr. :] $v(t)$
+            \item[Opl. :]  
+                We weten de formule voor magnetische kracht
+                \begin{equation*}
+                    F = I\ell B = m a = m \frac{dv}{dt} 
+                \end{equation*}
+                waaruit volgt 
+                \begin{equation*}
+                    v(t) = \frac{I \ell B}{m} t
+                \end{equation*}
+        \end{description}
+
+    \newpage
+    
+    \item 
+        \begin{description}[labelwidth=1.5cm, leftmargin=!]
+            \item[Geg. :]  $m$, $R$, $\ell$ $B$
+            \item[Gevr. :] $v(t)$
+            \item[Opl. :]  
+                De magnetische flux is
+                \begin{equation*}
+                    \Phi_B = \int \Vec{B} \cdot d\Vec{A} = B \ell x
+                \end{equation*}
+                waaruit we de geïnduceerde emf bepalen
+                \begin{equation*}
+                    \mathcal{E}_{\text{ind}} = - \frac{d\Phi_B}{dt} = - B\ell \frac{dx}{dt} = - B\ell v
+                \end{equation*}
+                wat betekent dat de geïnduceerde stroom het volgende is
+                \begin{equation*}
+                    I_{\text{ind}} = \frac{Blv}{R}.
+                \end{equation*}
+                We weten de formule voor magnetische kracht
+                \begin{align*}
+                    F_{I} 
+                        &=  I \ell B \\
+                    F_{I_{\text{ind}}} 
+                        &= I_{\text{ind}}\ell B = \frac{B^2 \ell^2 v}{R} 
+                \end{align*}
+                waarop we de tweede wet van Newton toepassen
+                \begin{equation*}
+                    F_{\text{net}} = F_{I} - F_{I_{\text{ind}}} = I\ell B - \frac{B^2 \ell^2 v}{R} = m\frac{dv}{dt}
+                \end{equation*}
+                wat leidt tot de differentiaalvergelijking
+                \begin{equation*}
+                      \frac{dv}{dt} - \frac{B^2 \ell^2}{mR} v + \frac{I \ell B}{m} = 0
+                \end{equation*}
+                wat als oplossing heeft
+                \begin{equation*}
+                    v(t) = \frac{\epsilon_0}{B\ell}\left(1-e^{\left(\frac{-B^2\ell^2t}{mR}\right)}\right)
+                \end{equation*}
+        \end{description}
+    \item 
+        \begin{description}[labelwidth=1.5cm, leftmargin=!]
+            \item[Geg. :]  $m$, $R$, $\ell$ $B$
+            \item[Gevr. :] $\lim_{t\to\infty} v(t)$
+            \item[Opl. :]  
+                We berekenen de limiet tot oneindig van de gevonden $v(t)$ uit (b), we krijgen
+                \begin{align*}
+                    \lim_{t\to\infty} v(t) 
+                        &= \lim_{t\to\infty} \frac{\epsilon_0}{B\ell}\left(1-e^{\left(\frac{-B^2\ell^2t}{mR}\right)}\right) \\
+                        &= \frac{\epsilon_0}{B\ell}\left(1- \lim_{t\to\infty} e^{\left(\frac{-B^2\ell^2t}{mR}\right)}\right) \\
+                        &= \frac{\epsilon_0}{B\ell}\left(1- 0\right) \\
+                        &= \frac{\epsilon_0}{B\ell}
+                \end{align*}
+        \end{description}
+\end{enumerate}
+
+
+\vspace{1cm}

@@ -1,0 +1,46 @@
+\textbf{\underline{OZ 3 - De Lorentzkracht en de wet van Ampère - Oefening 5:}}
+\vspace{0.5cm}
+
+Een solenoïde met diameter $10,0$ cm en lengte $75,0$ cm wordt gemaakt van een koperen
+draad met een heel dunne laag isolatie. De diameter van de draad is $0,100$ cm.
+De draad wordt in een enkele laag rond een kartonnen cilinder gewikkeld, waarbij
+opeenvolgende wikkelingen elkaar raken. Welk vermogen moet geleverd worden aan
+deze solenoïde om een veld van $8,00$ mT te creëeren in het centrum? De resistiviteit
+van koper is $1.75 \cdot 10^{-8} \ \Omega$m bij $20^\circ$.
+
+% \begin{description}[labelwidth=1.5cm, leftmargin=!]
+%     \item[Geg. :]   
+%     \item[Gevr. :]  
+%     \item[Opl. :]  
+% \end{description}
+
+\begin{description}[labelwidth=1.5cm, leftmargin=!]
+    \item[Geg. :]   $d_{\text{spoel}} = 10.0$ cm, $\ell_{\text{spoel}} = 75.0$ cm, $d_{\text{draad}} = 0.100$ cm, $\rho = 1.75 \cdot 10^{-8} \ \Omega$m, $B = 8.00$ mT
+    % $T = 20^\circ$
+    \item[Gevr. :]  $P$ ?
+    \item[Opl. :]   
+    
+                    We passen de wet van ampère toe 
+                    \begin{equation*}
+                        \oint \Vec{B} \cdot d\Vec{\ell} = B\ell_{\text{spoel}} = \mu_0NI_{\text{in}}
+                    \end{equation*}
+                    Er is gegeven dat opeenvolgende wikkelingen elkaar raken, hieruit volgt dat 
+                    \begin{equation*}
+                        B = \mu_0\dfrac{N}{\ell_{\text{spoel}}}I_{\text{in}} = \mu_0d_{\text{draad}}I_{\text{in}} 
+                    \end{equation*}
+                    sinds $N = \tfrac{\ell_{\text{spoel}}}{d_{\text{draad}}}$. We vervangen $I_{\text{in}}$ met $\sqrt{\tfrac{P}{R}}$:
+                    \begin{equation*}
+                        B = \mu_0\sqrt{\dfrac{P}{R}} = \mu_0\sqrt{\dfrac{P}{4\rho\dfrac{\ell_{\text{draad}}}{\pi d_{\text{draad}}^2}}}
+                    \end{equation*}
+                    De lengte van de draad kunnen we berekenen met
+                    \begin{equation*}
+                        \ell_{\text{draad}} = \pi d_{\text{spoel}} N 
+                    \end{equation*}
+                    Hieruit kunnen we P berekenen: 
+                    \begin{equation*}
+                        P = \left(\dfrac{B}{\mu_0}\right)^2\left(4\rho N \dfrac{d_{\text{spoel}}}{
+                        d_{\text{draad}}^2}\right) \approx 213 W
+                    \end{equation*}           
+\end{description}
+
+\vspace{1cm}
