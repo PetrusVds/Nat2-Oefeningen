@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1700156362 "/Users/pietervds/Homework/Bach3/Nat2/Oefenzittingen/Oplossingen/main.tex" "out/main.pdf" "main" 1700156363 0
+["pdflatex"] 1700156858 "/Users/pietervds/Homework/Bach3/Nat2/Oefenzittingen/Oplossingen/main.tex" "out/main.pdf" "main" 1700156859 0
   "/Users/pietervds/Homework/Bach3/Nat2/Oefenzittingen/Oplossingen/main.tex" 1700152710 5935 38c81fd49c8a336f3f045dd695a895e4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -119,13 +119,13 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693394133 8173125 296944de53bac08721798f9066f6fd56 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "main.tex" 1700152710 5935 38c81fd49c8a336f3f045dd695a895e4 ""
-  "out/main.aux" 1700156363 4691 5d93450588e8e414d4a8ae5d2106f266 "pdflatex"
-  "out/main.out" 1700156363 1788 722df5c4b19c39d51e55ee8da6648d0d "pdflatex"
+  "out/main.aux" 1700156859 4691 5d93450588e8e414d4a8ae5d2106f266 "pdflatex"
+  "out/main.out" 1700156859 1788 722df5c4b19c39d51e55ee8da6648d0d "pdflatex"
   "oz01/herhaling/herhaling.tex" 1700152710 366 5bdd51119e1061d5c1dd36035c6e1731 ""
   "oz01/herhaling/oefeningen/oef1.tex" 1700152710 1313 b0a5c6a51b2de7ade53af54821708644 ""
   "oz01/herhaling/oefeningen/oef2.tex" 1700152710 2238 16ba0afde8943479be64953429445c7d ""
   "oz01/herhaling/oefeningen/oef3.tex" 1700152710 3799 311c14f9c69aa0d2576241b1593fc2ed ""
-  "oz01/herhaling/oefeningen/oef4.tex" 1700152710 3540 590e5933b03b1b143af3e188c26d5aae ""
+  "oz01/herhaling/oefeningen/oef4.tex" 1700156858 3542 43df3758bd4a91014b30b1392a340629 ""
   "oz01/herhaling/resources/ElektronenElektrischVeld.png" 1700152710 99362 b5644df18e348445eff25f80ea189410 ""
   "oz01/oz.tex" 1700152710 100 a0455639d7c8a2406ba8344838f84711 ""
   "oz01/velden/oefeningen/oef1.tex" 1700152710 1173 6e6292b70a772a19c91e3f7fdd219abe ""
