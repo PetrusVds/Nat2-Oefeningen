@@ -26,15 +26,19 @@ Een zeer lange geleidende strip van breedte $d$ en verwaarloosbare dikte ligt in
             \item[Gevr. :]  $B$ ?
             \item[Opl. :]  
                         We kunnen een strip zien als een hoop infinitesimale draden over een breedte $d$. We zullen een
-                        infinitesimale magnetisch veld bekijken dat veroorzaakt wordt door één van deze infinitesimale draden: 
+                        infinitesimale magnetisch veld bekijken dat veroorzaakt wordt door één van deze infinitesimale draden. Het $B_y$ veld zal nul worden, we bekijken dus $B_x$.
                         \begin{equation*}
-                            dB = \dfrac{\mu_oI}{2\pi}\dfrac{1}{dr} = \dfrac{\mu_oI}{2\pi}\dfrac{1}{x^2 + y^2} \sin(\theta) dx = \dfrac{\mu_oIy}{2\pi d}\dfrac{1}{x^2 + y^2} dx
+                            dB_x 
+                                = \frac{\mu_o}{2\pi}\frac{\sin(\theta)}{r} dI
+                                = \frac{\mu_o I}{2\pi d}\frac{\sin(\theta)}{r} dx
+                                = \frac{\mu_o I}{2\pi d}\frac{y}{x^2+y^2} dx
                         \end{equation*}
                         Het punt $y$ bevindt zich boven de oorsprong, we gebruiken symmetrie en integreren dus van $0\to\tfrac{d}{2}$: 
                         \begin{equation*}
-                            B = \bigintsss_{\hspace{0.05cm} 0}^{\tfrac{d}{2}} \dfrac{\mu_oIy}{\pi d}\dfrac{dx}{x^2 + y^2} 
-                              = \dfrac{\mu_oIy}{\pi d} \bigintsss_{\hspace{0.05cm} 0}^{\tfrac{d}{2}} \dfrac{dx}{x^2 + y^2}
-                              = \dfrac{\mu_oI}{\pi d}\tan^{-1}(\tfrac{d}{2y})
+                            B 
+                                = \bigintsss_{\hspace{0.05cm} 0}^{\tfrac{d}{2}} \dfrac{\mu_oIy}{\pi d}\dfrac{dx}{x^2 + y^2} 
+                                = \dfrac{\mu_oIy}{\pi d} \bigintsss_{\hspace{0.05cm} 0}^{\tfrac{d}{2}} \dfrac{dx}{x^2 + y^2}
+                                = \dfrac{\mu_oI}{\pi d}\tan^{-1}(\tfrac{d}{2y})
                         \end{equation*}
         \end{description}
     \item 
