@@ -10,9 +10,23 @@
     \end{minipage}
 
     \begin{description}[labelwidth=1.5cm, leftmargin=!]
-        \item[Geg. :]
-        \item[Gevr. :] 
+        \item[Geg. :] $\vec{B}$, $R$, $C$, $r$, $V_0$, $\tau$
+        \item[Gevr. :] $\frac{dB}{dt}$
         \item[Opl. :]
+            Het magnetisch veld zal een emf induceren in het circuit, waardoor er een stroom tegen-wijzerzin zal lopen. De stroom kunnen we vinden met volgende formule 
+            \begin{equation*}
+                I = \frac{dQ}{dt} = \frac{d}{dt} \left(CV_0(1-e^{\frac{-t}{\tau}})\right) = \frac{V_0}{R}e^{\frac{-t}{\tau}}
+            \end{equation*}
+            waaruit we de geinduceerde emf kunnen vinden
+            \begin{equation*}
+                \mathcal{E}_{\text{ind}} = IR + V_C = V_0e^{\frac{-t}{\tau}} + V_0\left( 1 - e^{\frac{-t}{\tau}}\right) = V_0
+            \end{equation*}
+            wat we kunnen stoppen in de wet van faraday om de verandering van het magnetisch veld te vinden
+            \begin{equation*}
+                \frac{dB}{dt} = - \frac{\mathcal{E}_{\text{ind}}}{A} = - \frac{V_0}{\pi r^2}
+            \end{equation*}
+            en dus blijkt dat het magnetisch veld vermindert.
+
     \end{description}
 
 
