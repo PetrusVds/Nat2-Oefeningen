@@ -27,27 +27,31 @@
                 \item[] 
                     \vspace{-0.45cm}\begin{minipage}{.6\textwidth}
                         Deze oefening mag niet met de wet van Faraday, sinds er geen veranderende magnetische flux is. 
-                        De ladingen in de draad zullen een lorentzkracht ondervinden totdat er een evenwicht is, m.a.w. totdat
+                        De ladingen in de draad zullen een lorentzkracht ondervinden totdat er een evenwicht is, namelijk
                         \begin{equation*}
-                            \mathcal{E} =  E\ell = vB\ell
+                            \mathcal{E} =  E\ell = vB(r)\ell
                         \end{equation*}
-                        het magnetisch veld is een functie van de afstand tot de lange draad
+                        waabij het magnetisch veld is een functie van de afstand tot de lange draad
                         \begin{equation*}
-                            B_{|}(r) = \frac{\mu_0I}{2\pi r}.
+                            B_{|}(r) = \frac{\mu_0I}{2\pi r}
                         \end{equation*}
-                        We berekenen de infinitesimale geïnduceerde emf 
-                        \begin{equation*}
-                            d\mathcal{E}_{\text{ind}} = B_{|}(r)vdr = \frac{\mu_0I}{2\pi r}vdr
-                        \end{equation*}
-                        waarover we integreren tot we de volledige geïnduceerde emf hebben
-                        \begin{equation*}
-                            \mathcal{E}_{\text{ind}} = \int_{b}^{b+a} \frac{\mu_0vI}{2\pi r}dr = \frac{\mu_0vI}{2\pi} \ln\left(\frac{b+a}{b}\right).
-                        \end{equation*}
-                        De emf is gericht \textbf{naar} de draad wegens de lorentzkracht.
+
                     \end{minipage}
                     \hspace{0.5cm}\begin{minipage}{.36\textwidth}
                         \includegraphics[scale = 0.4]{oz06/resources/Oz6Oef1-2.png}
                     \end{minipage}
+
+                    \vspace{0.3cm}
+
+                    en dus veranderlijk is over de lengte van de draad. We berekenen de infinitesimale geïnduceerde emf over een infinitesimaal stukje van de draad
+                    \begin{equation*}
+                        d\mathcal{E}_{\text{ind}} = B_{|}(r)vdr = \frac{\mu_0I}{2\pi r}vdr
+                    \end{equation*}
+                    waarover we integreren tot we de volledige geïnduceerde emf hebben
+                    \begin{equation*}
+                        \mathcal{E}_{\text{ind}} = \int_{b}^{b+a} \frac{\mu_0vI}{2\pi r}dr = \frac{\mu_0vI}{2\pi} \ln\left(\frac{b+a}{b}\right).
+                    \end{equation*}
+                    De emf is gericht \textbf{naar} de draad wegens de lorentzkracht.
             \end{description}
         \item     
             \begin{description}[labelwidth=1.5cm, leftmargin=!]

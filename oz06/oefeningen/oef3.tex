@@ -16,15 +16,41 @@
     \begin{enumerate}[(a)]
         \item     
             \begin{description}[labelwidth=1.5cm, leftmargin=!]
-                \item[Geg. :]
-                \item[Gevr. :] 
-                \item[Opl. :]
+                \item[Geg. :] $B = (2.00t^3 - 4.00t^2 +0.800) $ T, $r_2 = 2R = 5.00$ cm, $t = 2.00$ s
+                \item[Gevr. :] $F$
+                \item[Opl. :] 
+                    We weten volgens de wet van Faraday dat waarbij we $d\vec{s}$ kiezen in tegenwijzerzin (en dus $d\vec{A}$ uit het bord)
+                    \begin{equation*}
+                        \oint \vec{E} \cdot d\vec{s} =  - \frac{d}{dt} \left( \int \vec{B} \cdot d\vec{A} \right)
+                    \end{equation*}
+                    % en dus dat
+                    % \begin{equation*}
+                    %     \oint E dr = \frac{d}{dt} \left( \int B dA \right) = \pi r^2 \frac{dB}{dt} 
+                    % \end{equation*}
+                    ofwel dat 
+                    \begin{equation*}
+                        E(r,t) = \frac{\pi (\frac{r}{2})^2}{2\pi r}\frac{d\left((2.00t^3 - 4.00t^2 +0.800)\right)}{dt} = \frac{r}{8} (6.00t^2 - 8.00t).
+                    \end{equation*}
+                    Hieruit volgt voor $r = r_2 = 5.00 \cdot 10^{-2}$ m, $t = 2.00$ s en $q = -1.60 \cdot 10^{-19}$ C dat
+                    \begin{equation*}
+                        F(q,r,t) = qE(r,t) = - 8.00 \cdot 10^{-21}.
+                    \end{equation*}
+                    Vectorieel wordt dit
+                    \begin{equation*}
+                        \vec{F}_{P_2} = 8.00 \cdot 10^{-21} \ (-\hat{j})
+                    \end{equation*}
             \end{description}
         \item     
             \begin{description}[labelwidth=1.5cm, leftmargin=!]
-                \item[Geg. :]
-                \item[Gevr. :] 
+                \item[Geg. :] $F(t) = 0$
+                \item[Gevr. :] $t$
                 \item[Opl. :]
+                    We zoeken de nulpunten van de functie als $r = 5.00 \cdot 10^{-2}$ m en $q = -1.60 \cdot 10^{-19}$ C 
+                    \begin{equation*}
+                        F(q,r,t) = qE(r,t) = q \left( \frac{r}{8} (6.00t^2 - 8.00t) \right) = 0.
+                    \end{equation*}
+                    De enigste factor die nul kan worden is $6.00t^2 - 8.00t$ en dus zoeken we de nulpunten hiervan,
+                    wat ons $t = 0$ en $t = \frac{4}{3}$ s geeft.
             \end{description}
     \end{enumerate}
 
