@@ -1,7 +1,7 @@
 \textbf{\underline{OZ 7 - Inductantie - Oefening 3:}}
 \vspace{0.5cm}
 
-Beschouw een circuit waarbij $ \varepsilon = 6,00 $ V, $ L = 8,00 $ mH, en $ R = 4,00 \ \Omega $.
+Beschouw een circuit waarbij $ \mathcal{E} = 6,00 $ V, $ L = 8,00 $ mH, en $ R = 4,00 \ \Omega $.
 
 \vspace{0.3cm}
 \begin{minipage}{.75\textwidth}
@@ -24,31 +24,68 @@ Beschouw een circuit waarbij $ \varepsilon = 6,00 $ V, $ L = 8,00 $ mH, en $ R =
 %     \item[Opl. :]
 % \end{description}
 
+\begin{description}[labelwidth=1.5cm, leftmargin=!]
+    \item[Geg. :] $ \mathcal{E} = 6,00 $ V, $ L = 8,00 $ mH, $ R = 4,00 \ \Omega $
+\end{description}
 
 \begin{enumerate}[(a)]
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :] 
-            \item[Gevr. :] 
+            \item[Gevr. :] $\tau$
             \item[Opl. :]
+                De inductieve tijdsconstante $ \tau $ van het circuit is gelijk aan
+                \begin{equation*}
+                    \tau = \frac{L}{R} = \frac{8,00 \cdot 10^{-3}}{4,00} = 2 \cdot 10^{-3} \ \text{s}
+                \end{equation*}
         \end{description}
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :] 
-            \item[Gevr. :] 
+            \item[Geg. :] $t_1 = 250 \ \mu$s
+            \item[Gevr. :] $I(t_1)$
             \item[Opl. :]
+                We passen de wet van Kirchhoff toe op het circuit
+                \begin{equation*}
+                    \mathcal{E} = L \frac{\mathrm{d}I}{\mathrm{d}t} + RI
+                \end{equation*}
+                wat een differentiaalvergelijking is met oplossing
+                \begin{equation*}
+                    I(t) = \frac{\mathcal{E}}{R} \left(1 - e^{\frac{-t}{\tau}} \right)
+                \end{equation*}
+                waarin we de gegeven waarde invullen
+                \begin{equation*}
+                    I(t_1) = 0.176 \ \text{A}.
+                \end{equation*}
+
         \end{description}
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :] 
-            \item[Gevr. :] 
+            \item[Gevr. :] $\lim_{t\to\infty} I(t)$
             \item[Opl. :]
+                De steady-state stroom is gelijk aan
+                \begin{equation*}
+                    \lim_{t\to\infty} I(t) = \frac{\mathcal{E}}{R}\left(1 - \lim_{t\to\infty} e^{\frac{-t}{\tau}}\right) = \frac{\mathcal{E}}{R} = 1.50 \ \text{A}.
+                \end{equation*}
         \end{description}
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :] 
-            \item[Gevr. :] 
+            \item[Gevr. :] $t_{80\%}$
             \item[Opl. :]
+                De maximale stroom, of de steady-state stroom, is gelijk aan
+                \begin{equation*}
+                    I_{max} = \frac{\mathcal{E}}{R} = 1.50 \ \text{A}.
+                \end{equation*}
+                De stroom $I_{80\%}$ wordt dus eigenlijk gegeven door
+                \begin{equation*}
+                    I_{80\%} = \left(1 - e^{\frac{-t_{80\%}}{\tau}}\right) I_{max}.
+                \end{equation*}
+                We zoeken nu de tijd $t_{80\%}$ waarvoor
+                \begin{equation*}
+                   e^{\frac{-t_{80\%}}{\tau}} = 0.20
+                \end{equation*}
+                wat uitkomt op 
+                \begin{equation*}
+                    t_{80\%} = -\tau \ln(0.20) = 3.22 \cdot 10^{-3}\ \text{s}.
+                \end{equation*}
         \end{description}
 \end{enumerate}
 
