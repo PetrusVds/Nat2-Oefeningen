@@ -15,24 +15,43 @@ Twee solenoïdes $A$ en $B$, die zich dicht in elkaars buurt bevinden en dezelfd
 %     \item[Opl. :]
 % \end{description}
 
+\begin{description}[labelwidth=1.5cm, leftmargin=!]
+    \item[Geg. :] $N_A = 400$, $N_B = 700$, $I_A = 3.50$ A, $\Phi_{A} = 300$ $\mu$Wb, $\Phi_{B} = 90.0$ $\mu$Wb, 
+\end{description}
+
 \begin{enumerate}[(a)]
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :] 
-            \item[Gevr. :] 
-            \item[Opl. :]
+            \item[Gevr. :] $M_{AB}$ ?
+            \item[Opl. :]  
+                De wederzijdse inductie van twee spoelen wordt gegeven door:
+                \begin{equation*}
+                    M_{BA} = \frac{N_B \Phi_{BA}}{I_A}.
+                \end{equation*}
+                Er is geen stroom door B dus $\Phi_{BA} = \Phi_{B} = 90.0$ $\mu$Wb. De wederzijdse inductie wordt dan:
+                \begin{equation*}
+                    M_{BA} = \frac{N_B \Phi_{B}}{I_A} = 18.0 \ \text{mH}
+                \end{equation*}
+
         \end{description}
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!] 
-            \item[Geg. :] 
-            \item[Gevr. :] 
+            \item[Gevr. :] $L_B$ ?
             \item[Opl. :]
+                De zelfinductie van een spoel wordt gegeven door:
+                \begin{equation*}
+                    L_A = \frac{N_A \Phi_{A}}{I_A} = 34.3 \ \text{mH}
+                \end{equation*}
         \end{description}
     \item
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :] 
-            \item[Gevr. :] 
+            \item[Geg. :] $\frac{dI_A}{dt} = 0.500$ A/s
+            \item[Gevr. :] $\mathcal{E}_B$ ?
             \item[Opl. :]
+                De emf geïnduceerd in een spoel wordt gegeven door:
+                \begin{equation*}
+                    \mathcal{E}_B = -M_{BA} \frac{dI_A}{dt} = -9.00 \ \text{mV}
+                \end{equation*}
         \end{description}
 \end{enumerate}
 
