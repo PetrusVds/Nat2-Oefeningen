@@ -8,9 +8,22 @@ Beschouw de kring met een spanningsbron met emf van $50.0 \ \text{V}$, een weers
 \end{center}
     
 \begin{description}[labelwidth=1.5cm, leftmargin=!]
-    \item[Geg. :]   
-    \item[Gevr. :] 
-    \item[Opl. :]   
+    \item[Geg. :]  $\mathcal{E} = 50.0 \ \text{V}$, $R = 250 \ \Omega$, $C = 0.500 \ \mu \text{F}$, $\Delta V_{\text{max}} = 150.0 \ \text{V}$
+    \item[Gevr. :] $L$ ?
+    \item[Opl. :] 
+        Stel de schakelaar is lang gesloten geweest, dan is de stroom 
+        \begin{equation*}
+            I_{\text{max}} = \frac{\mathcal{E}}{R}
+        \end{equation*}
+        want de condensator is dan volledig opgeladen. Sinds de potentiaal verschillen over de inductor en de condensator gelijk zijn, dan ook de potentiële energie opgeslagen in de inductor en de condensator:
+        \begin{equation*}
+            \frac{1}{2}LI_{\text{max}}^2 = \frac{1}{2}C\Delta V_{\text{max}}^2. 
+        \end{equation*}
+        We kunnen nu de inductantie berekenen:
+        \begin{equation*}
+            L = \frac{C\Delta V_{\text{max}}^2}{I_{\text{max}}^2} = \frac{C\Delta V_{\text{max}}^2R^2}{\mathcal{E}^2} \approx 281 \ \text{mH}.
+        \end{equation*}
+
 \end{description}
 
 \vspace{1cm}
