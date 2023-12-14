@@ -1,7 +1,7 @@
 \textbf{\underline{OZ 9 - Wisselstroomkringen - Oefening 2:}}
 \vspace{0.5cm}
 
-Op een LRC-circuit met$ R = 150 \ \Omega$, $L = 25.0 \ \text{mH}$, en$ C = 2.00 \ \mu\text{F}$ is een wisselspanningsbron met $V_0 = 340 \ \text{V}$ en frequentie $f = 660 \text{Hz}$.
+Op een RLC-circuit met $R = 150 \ \Omega$, $L = 25.0 \ \text{mH}$, en $ C = 2.00 \ \mu\text{F}$ is een wisselspanningsbron met $\Delta V_0 = 340 \ \text{V}$ en frequentie $f = 660 \ \text{Hz}$.
 
 \begin{enumerate}[(a)]
     \item Bepaal de maximale stroom doorheen het circuit.
@@ -9,24 +9,65 @@ Op een LRC-circuit met$ R = 150 \ \Omega$, $L = 25.0 \ \text{mH}$, en$ C = 2.00 
     \item Bepaal de maximale spanning over $R$, $L$ of $C$ en zijn fasehoek ten opzichte van de bronspanning.
 \end{enumerate}
 
+\begin{description}[labelwidth=1.5cm, leftmargin=!]
+    \item[Geg. :] $R = 150 \ \Omega$, $L = 25.0 \ \text{mH}$, $ C = 2.00 \ \mu\text{F}$, $\Delta V_0 = 340 \ \text{V}$, $f = 660 \ \text{Hz}$
+\end{description}
+
 \begin{enumerate}[(a)]
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
+            \item[Gevr. :] $I_{\text{max}}$ ?
             \item[Opl. :]   
+                We weten dat de impedantie gelijk is aan:
+                \begin{equation*}
+                    Z = \frac{I_{\text{max}}}{\Delta V_{\text{max}}}= \sqrt{R^2 + (X_L - X_C)^2}.
+                \end{equation*}
+                Sinds $\Delta V_0 = \Delta V_{\text{max}}$, vinden we nu voor $I_{\text{max}}$:
+                \begin{align*}
+                    I_{\text{max}} 
+                        &= \frac{\Delta V_0}{\sqrt{R^2 + (X_L - X_C)^2}} \\
+                        &= \frac{\Delta V_0}{\sqrt{R^2 + ((2\pi f L) - (\frac{1}{2\pi f C}))^2}} \\
+                        &\approx 2.25 \ \text{A}
+                \end{align*}
         \end{description}
     \item
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
+            \item[Gevr. :] $\phi$ ?
             \item[Opl. :]   
+                We kunnen de fasehoek berekenen met:
+                \begin{equation*}
+                    \phi = \tan^{-1}\left(\frac{X_L - X_C}{R}\right) \approx -6.42^\circ.
+                \end{equation*}
         \end{description}
     \item
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
+            \item[Gevr. :] $R$, $L$, $C$ ?
             \item[Opl. :]   
+            \begin{itemize}
+                \item $R$: 
+                    De weerstand en potentiaal zijn in fase (de fasehoek is dus gelijk), we kunnen met volgende formule de maximale potentiaal op de weerstand berekenen:
+                    \begin{equation*}
+                        \Delta V_R = I_{\text{max}} R \approx 338 \ \text{V}.
+                    \end{equation*}
+                \item $L$:
+                    De zelfinductie loopt voor op de potentiaal met $90^\circ$, er volgt dus:
+                    \begin{equation*}
+                        \phi_L = \phi + 90^\circ = 83.6^\circ.
+                    \end{equation*} 
+                    We kunnen met volgende formule de maximale potentiaal op de zelfinductie berekenen:
+                    \begin{equation*}
+                        \Delta V_L = I_{\text{max}} X_L \approx 233 \ \text{V}.
+                    \end{equation*}
+                \item $C$:
+                    De capaciteit loopt achter op de potentiaal met $90^\circ$, er volgt dus:
+                    \begin{equation*}
+                        \phi_C = \phi - 90^\circ = -96.4^\circ.
+                    \end{equation*}
+                    We kunnen met volgende formule de maximale potentiaal op de capaciteit berekenen:
+                    \begin{equation*}
+                        \Delta V_C = I_{\text{max}} X_C \approx 271 \ \text{V}.
+                    \end{equation*}
+            \end{itemize}
         \end{description}
 \end{enumerate}
 

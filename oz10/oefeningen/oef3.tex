@@ -5,21 +5,36 @@ Beschouw een ruimte met elektrische veld $\vec{E} = (80.0\hat{i} + 32.0\hat{j} -
 
 \begin{enumerate}[(a)]
     \item Toon aan dat de twee velden loodrecht op elkaar staan.
-    \item Bepaal de Poynting vector voor deze velden
+    \item Bepaal de Poynting vector $\vec{S} = \vec{E} \times \vec{B}$ voor deze velden
 \end{enumerate}
 
 \begin{enumerate}[(a)]
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
+            \item[Gevr. :] $\vec{E} \perp \vec{B}$ ?
             \item[Opl. :]   
+                Als de velden loodrecht zijn, dan is het inwendig product gelijk aan 0.
+                \begin{equation*}
+                    \vec{E} \cdot \vec{B} = (80 \cdot 0.2) + (32 \cdot 0.08) - (64\cdot 0.29) = 0
+                \end{equation*}
         \end{description}
     \item
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
+            \item[Gevr. :] $\vec{S}$ ?
             \item[Opl. :]   
+                We weten dat $\vec{S} = \vec{E} \times \vec{B}$ en berekenen we dus de geziene determinant
+                \begin{equation*}
+                    \vec{S} = 
+                    \begin{vmatrix}
+                        \hat{i} & \hat{j} & \hat{k} \\
+                        80.0 & 32.0 & -64.0 \\
+                        0.200 & 0.0800 & 0.290
+                    \end{vmatrix}
+                \end{equation*}
+                waaruit volgt
+                \begin{equation*}
+                    \vec{S} = 14,4 \hat{i} - 36 \hat{j} 
+                \end{equation*}
         \end{description}
 \end{enumerate}
 
