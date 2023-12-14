@@ -19,19 +19,41 @@ Bereken $Z$, $X_L$, $X_C$ en $\phi$ voor een AC-circuit met $R = 300 \ \Omega$, 
         \begin{align*}
             X_L &= \omega L \approx 200 \ \Omega \\ X_C &= \frac{1}{\omega C} \approx 90.9 \ \Omega
         \end{align*}
-        We berekenen $Z$:
-        \begin{equation*}
-            Z = \sqrt{R^2 + (X_L - X_C)^2} \approx 319 \ \Omega
-        \end{equation*}
-        We berekenen $\phi$:
-        \begin{equation*}
-            \phi = \arctan\left(\frac{X_L - X_C}{R}\right) \approx 20^\circ
-        \end{equation*}
-        Het AC-circuit is meer inductief dan capacitief met bijhorend fasordiagram
-        \begin{center}
-            \includegraphics[scale = 0.3]{oz09/resources/Oef1Fasor.png}
-        \end{center}
-        waarbij $phi$ dient gezien te worden als een hoek van $20^\circ$.
+        \begin{itemize}
+            \item Serieschakeling: $I$ is gelijk. We hebben het volgende fasor diagram
+                \begin{center}
+                    \includegraphics[scale=0.3]{oz09/resources/Oz9Oef1-serie.png}
+                \end{center}
+                waarbij 
+                \begin{equation*}
+                    |\Delta V_{\text{max},R}| \approx \frac{3}{2}|\Delta V_{\text{max},L}| \approx 3|\Delta V_{\text{max},C}|.
+                \end{equation*}
+                We berekenen $Z$ (met Pythagoras):
+                \begin{equation*}
+                    Z = \sqrt{R^2 + (X_L - X_C)^2} \approx 319 \ \Omega
+                \end{equation*}
+                We berekenen $\phi$:
+                \begin{equation*}
+                    \phi = \tan^{-1}\left(\frac{X_L - X_C}{R}\right) \approx 20^\circ
+                \end{equation*}
+  
+            \item Parallelschakeling: $\Delta V$ is gelijk. We hebben het volgende fasor diagram
+                \begin{center}
+                    \includegraphics[scale=0.3]{oz09/resources/Oz9Oef1-parallel.png}
+                \end{center}
+                waarbij
+                \begin{equation*}
+                    |\Delta I_{\text{max},C}| \approx 2|\Delta I_{\text{max},L}| \approx 3|\Delta I_{\text{max},R}|.
+                \end{equation*}
+                We berekenen $Z$ (met Pythagoras):
+                \begin{equation*}
+                    Z = \frac{1}{\sqrt{\frac{1}{R^2} + \left(\frac{1}{X_L} - \frac{1}{X_C}\right)^2}} = 103 \ \Omega
+                \end{equation*}
+                We berekenen $\phi$:
+                \begin{equation*}
+                    \phi = \tan^{-1}\left(\frac{\frac{1}{X_L} - \frac{1}{X_R}}{\frac{1}{R}}\right) \approx -61^\circ
+                \end{equation*}
+        \end{itemize}
 \end{description}
 
 \vspace{1cm}

@@ -21,7 +21,7 @@ Een spoel met $820$ windingen heeft een weerstand van $24,0 \ \Omega$, en wordt 
 \end{minipage}
 
 \begin{description}[labelwidth=1.5cm, leftmargin=!]
-    \item[Geg. :]   $N_1 = 820$, $X_1 = 24.0 \ \Omega$, $N_2 = 12500$, $\ell_2 = 7.00 \ \text{cm}$, $A_1 = A_2 = 1.00\cdot10^{-4} \ \text{m}^2$, $R = 14.0 \ \Omega$, $\Delta V = 60 \ \text{V}$
+    \item[Geg. :]   $N_{\text{spoel}} = 820$, $R_{\text{spoel}} = 24.0 \ \Omega$, $N_{\text{sol}} = 12500$, $\ell_{\text{sol}} = 7.00 \ \text{cm}$, $A_{\text{spoel}} = A_{\text{sol}} = 1.00\cdot10^{-4} \ \text{m}^2$, $R = 14.0 \ \Omega$, $\mathcal{E} = 60 \ \text{V}$
 \end{description}
 
 \begin{enumerate}[(a)]
@@ -29,21 +29,44 @@ Een spoel met $820$ windingen heeft een weerstand van $24,0 \ \Omega$, en wordt 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
             \item[Gevr. :] $t_{63.2\%}$ ?
             \item[Opl. :]  
-                In een RL-kring volgt de stroom de volgende formule
+                De tweede wet van Kirchhoff geeft ons volgende vergelijking:
+                \begin{equation*}
+                    \mathcal{E} - I_{{\text{sol}}}R - L\frac{dI_{{\text{sol}}}}{dt} - M\frac{dI_{\text{spoel}}}{dt} = 0.
+                \end{equation*}
+                We bewijzen nu dat we kunnen aannemen dat  dit equivalent is aan de formule van een RL-kring: 
+                \begin{tcolorbox}
+                    \begin{description}
+                        \item[T.B. :] $\frac{d}{dt} I_{\text{spoel}}(t) << \frac{d}{dt} I_{\text{sol}}(t)$
+                        \item[Aanname :] $N_{\text{sol}} << N_{\text{spoel}}$
+                        \item[B. :] 
+                            We kunnen deze constructie zien als een transformator en dus:
+                            \begin{equation*}
+                                I_{\text{sol}}(t) = \frac{N_{\text{spoel}}}{N_{\text{sol}}} I_{\text{spoel}}(t).
+                            \end{equation*}
+                            Dit kunnen we afleiden
+                            \begin{equation*}
+                                \frac{d}{dt} I_{\text{sol}}(t) = \frac{N_{\text{spoel}}}{N_{\text{sol}}} \frac{d}{dt} I_{\text{spoel}}(t)
+                            \end{equation*}
+                            en dankzij onze aanname volgt dat 
+                            \begin{equation*}
+                                \frac{d}{dt} I_{\text{spoel}}(t) << \frac{d}{dt} I_{\text{sol}}(t).
+                            \end{equation*}
+                    \end{description}
+                \end{tcolorbox}
+                Er is dus bewezen dat we van een RL-kring mogen spreken. In een RL-kring volgt de stroom de volgende formule
                 \begin{equation*}
                     I(t) = I_{\text{max}} \left( 1 - e^{-\frac{t}{\tau}} \right)
                 \end{equation*}
                 met $\tau = \frac{L}{R}$. De stroom bereikt $63.2\%$ van zijn maximale waarde wanneer $t = \tau $. We kunnen dus stellen dat
                 \begin{equation*}
-                    t_{63.2\%} = \frac{L_2}{R} = \frac{\mu_0N_2^2A_2}{\ell_2R}.
+                    t_{63.2\%} = \frac{L_{{\text{sol}}}}{R} = \frac{\mu_0N_{{\text{sol}}}^2A_{{\text{sol}}}}{\ell_{{\text{sol}}}R}.
                 \end{equation*}
                 We berekenen nu triviaal de tijd door in te vullen:
                 \begin{equation*}
                     t_{63.2\%} = 0.02 \ \text{s} \approx 20.0 \ \text{ms}.
                 \end{equation*}
-
-
         \end{description}
+        \newpage
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
             \item[Gevr. :] $\mathcal{E}_{\text{back}}$ ?
@@ -58,7 +81,7 @@ Een spoel met $820$ windingen heeft een weerstand van $24,0 \ \Omega$, en wordt 
                 \end{equation*}
                 We kunnen nu de geïnduceerde emf berekenen:
                 \begin{equation*}
-                    \mathcal{E}_{\text{back}} = -L_2 \frac{\Delta I}{\Delta t} = -0.632 \frac{\mu_0N_2^2A_2}{\ell_2}\frac{\Delta V}{R\Delta t} = -37.9 \ \text{V}.
+                    \mathcal{E}_{\text{back}} = -L_2 \frac{\Delta I}{\Delta t} = -0.632 \frac{\mu_0N_2^2A_2}{\ell_{{\text{sol}}}}\frac{\Delta V}{R\Delta t} = -37.9 \ \text{V}.
                 \end{equation*}
         \end{description}
     \item 
@@ -67,7 +90,7 @@ Een spoel met $820$ windingen heeft een weerstand van $24,0 \ \Omega$, en wordt 
             \item[Opl. :]   
                 De gemiddelde snelheid van de verandering van het magnetische flux is gelijk aan 
                 \begin{equation*}
-                    \frac{\Delta \Phi_B}{\Delta t} = -\frac{\mathcal{E}_{\text{back}}}{N_2} \approx 3.04 \ \text{mV}.
+                    \frac{\Delta \Phi_B}{\Delta t} = -\frac{\mathcal{E}_{\text{back}}}{N_{{\text{sol}}}} \approx 3.04 \ \text{mV}.
                 \end{equation*}
         \end{description}
     \item 
@@ -76,7 +99,7 @@ Een spoel met $820$ windingen heeft een weerstand van $24,0 \ \Omega$, en wordt 
             \item[Opl. :]   
                 De gemiddelde stroom is gelijk aan 
                 \begin{equation*}
-                    I_{\text{ind}} = \frac{\mathcal{E}_{\text{ind}}}{X_1} = \frac{N_1}{X_1}\frac{\Delta \Phi_b}{\Delta t} \approx 104 \ \text{mA}.
+                    I_{\text{ind}} = \frac{\mathcal{E}_{\text{ind}}}{R_{{\text{spoel}}}} = \frac{N_{{\text{spoel}}}}{R_{{\text{spoel}}}}\frac{\Delta \Phi_B}{\Delta t} \approx 104 \ \text{mA}.
                 \end{equation*}
         \end{description}
 \end{enumerate}
