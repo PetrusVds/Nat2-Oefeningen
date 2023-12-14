@@ -1,7 +1,7 @@
 \textbf{\underline{OZ 9 - Wisselstroomkringen - Oefening 2:}}
 \vspace{0.5cm}
 
-Op een RLC-circuit met $R = 150 \ \Omega$, $L = 25.0 \ \text{mH}$, en $ C = 2.00 \ \mu\text{F}$ is een wisselspanningsbron met $\Delta V_0 = 340 \ \text{V}$ en frequentie $f = 660 \ \text{Hz}$.
+Op een RLC-circuit met $R = 150 \ \Omega$, $L = 25.0 \ \text{mH}$, en $ C = 2.00 \ \mu\text{F}$ is een wisselspanningsbron met $\Delta V_{\text{max}} = 340 \ \text{V}$ en frequentie $f = 660 \ \text{Hz}$.
 
 \begin{enumerate}[(a)]
     \item Bepaal de maximale stroom doorheen het circuit.
@@ -10,7 +10,7 @@ Op een RLC-circuit met $R = 150 \ \Omega$, $L = 25.0 \ \text{mH}$, en $ C = 2.00
 \end{enumerate}
 
 \begin{description}[labelwidth=1.5cm, leftmargin=!]
-    \item[Geg. :] $R = 150 \ \Omega$, $L = 25.0 \ \text{mH}$, $ C = 2.00 \ \mu\text{F}$, $\Delta V_0 = 340 \ \text{V}$, $f = 660 \ \text{Hz}$
+    \item[Geg. :] $R = 150 \ \Omega$, $L = 25.0 \ \text{mH}$, $ C = 2.00 \ \mu\text{F}$, $\Delta V_{\text{max}} = 340 \ \text{V}$, $f = 660 \ \text{Hz}$
 \end{description}
 
 We nemen aan dat de RLC-circuit in serie geschakeld is. 
@@ -19,18 +19,14 @@ We nemen aan dat de RLC-circuit in serie geschakeld is.
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
             \item[Gevr. :] $I_{\text{max}}$ ?
-            \item[Opl. :]   
-                We weten dat de impedantie gelijk is aan:
+            \item[Opl. :] 
+                We kunnen de maximale stroom berekenen met:
                 \begin{equation*}
-                    Z = \frac{I_{\text{max}}}{\Delta V_{\text{max}}}= \sqrt{R^2 + (X_L - X_C)^2}.
-                \end{equation*}
-                Sinds $\Delta V_0 = \Delta V_{\text{max}}$, vinden we nu voor $I_{\text{max}}$:
-                \begin{align*}
                     I_{\text{max}} 
-                        &= \frac{\Delta V_0}{\sqrt{R^2 + (X_L - X_C)^2}} \\
-                        &= \frac{\Delta V_0}{\sqrt{R^2 + ((2\pi f L) - (\frac{1}{2\pi f C}))^2}} \\
-                        &\approx 2.25 \ \text{A}
-                \end{align*}
+                        = \frac{\Delta V_{\text{max}}}{\sqrt{R^2 + (X_L - X_C)^2}} 
+                        % &= \frac{\Delta V_0}{\sqrt{R^2 + ((2\pi f L) - (\frac{1}{2\pi f C}))^2}} \\
+                        \approx 2.25 \ \text{A}.
+                \end{equation*}
         \end{description}
     \item
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
