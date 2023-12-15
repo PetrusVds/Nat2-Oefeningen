@@ -4,36 +4,62 @@
 Stel een condensator gevormd door cirkelvormige parallelle platen met straal $R$ die op een loodrechte afstand $d$ van elkaar staan. Stel hierover zet je een potentiaalverschil van $V(t) = V_0 (1 - e^{-mt})$, met $m$ een positieve constante en $t \geq 0$.
 
 \begin{enumerate}[(a)]
-    \item Wat zijn de oorzaken voor het creëeren van een magnetisch veld tussen de platen?
+    % \item Wat zijn de oorzaken voor het creëeren van een magnetisch veld tussen de platen?
     \item Vind de uitdrukking voor het magnetisch veld binnen de condensator. Wanneer is het magnetisch veld maximaal?
     \item Wat is het magnetisch veld buiten de condensator? Wanneer is deze maximaal?
-    \item Wat gebeurt er al er een diëlectricum wordt ingebracht?
+    \item Wat gebeurt er als er een diëlectricum wordt ingebracht?
 \end{enumerate}
 
+\begin{description}[labelwidth=1.5cm, leftmargin=!]
+    \item[Geg. :]   $R$, $d$, $V(t) = V_0 (1 - e^{-mt})$, $m > 0$, $t \geq 0$
+\end{description}
+
+We slagen (a) over, sinds deze impliciet beantwoord wordt.
+
 \begin{enumerate}[(a)]
+    % \item 
+    %     \begin{description}[labelwidth=1.5cm, leftmargin=!]
+    %         \item[Gevr. :] Oorzaken?
+    %         \item[Opl. :]   
+    %             Het elektrisch veld in de condensator verandert en deze verandering veroorzaakt een magnetisch veld, per de wet van Ampère-Maxwell.
+    %     \end{description}
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
+            \item[Gevr. :] $B$, $t_{max}$, $r \leq R$
             \item[Opl. :]   
+                Neem een cirkelvormig oppervlakte met straal $r$ binnen de condensator. We gebruiken de wet van Ampère-Maxwell:
+                \begin{align*}
+                    \int \vec{B} \cdot d\vec{\ell} 
+                        &= \mu_0 \epsilon_0 \frac{d}{dt}\left(\oint \vec{E} \cdot d\vec{A}\right) \\
+                        &= \mu_0 \epsilon_0 \frac{d}{dt}(E\pi r^2) \\
+                        &= \mu_0 \epsilon_0 \frac{d}{dt}\left(\frac{V}{d}\pi r^2\right) \quad (\Delta V = Ed) \\
+                        &= \frac{\mu_0 \epsilon_0\pi r^2}{d}\frac{dV}{dt} \\
+                        &= \frac{\mu_0 \epsilon_0\pi r^2 V_0 m }{d} e^{-mt} \\
+                    B(r,t) &= \frac{\mu_0 \epsilon_0 V_0 m }{2d} e^{-mt} r
+                \end{align*}
+                Het magnetisch veld is maximaal wanneer $t_{\text{max}} = 0$.
         \end{description}
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
+            \item[Gevr. :] $B$, $t_{max}$, $r \leq R$
             \item[Opl. :]   
+                Neem een cirkelvormig oppervlakte met straal $r$ buiten de condensator. We gebruiken de wet van Ampère-Maxwell:
+                \begin{align*}
+                    \int \vec{B} \cdot d\vec{\ell} 
+                        &= \mu_0 \epsilon_0 \frac{d}{dt}\left(\oint \vec{E} \cdot d\vec{A}\right) \\
+                        &= \mu_0 \epsilon_0 \frac{d}{dt}(E\pi R^2) \\
+                        &= \mu_0 \epsilon_0 \frac{d}{dt}\left(\frac{V}{d}\pi R^2\right) \quad (\Delta V = Ed) \\
+                        &= \frac{\mu_0 \epsilon_0\pi R^2}{d}\frac{dV}{dt} \\
+                        &= \frac{\mu_0 \epsilon_0\pi R^2 V_0 m }{d} e^{-mt} \\
+                    B(r,t) &= \frac{\mu_0 \epsilon_0 V_0 m }{2d} e^{-mt} \frac{R^2}{r}
+                \end{align*}
         \end{description}
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
+            \item[Geg. :]   $\epsilon$
+            \item[Gevr. :] Gevolg?
             \item[Opl. :]   
-        \end{description}
-    \item 
-        \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
-            \item[Opl. :]   
+                We moeten in de formules van (b) en (c) $\epsilon_0$ vervangen door $\epsilon$. 
         \end{description}
 \end{enumerate}
 
