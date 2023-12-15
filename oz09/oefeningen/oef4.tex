@@ -28,7 +28,7 @@ In de schakeling in onderstaande figuur, neem aan dat alle parameters behalve C 
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
             \item[Geg. :]  $S_1$ en $S_2$ gesloten
-            \item[Gevr. :] $i(t)$
+            \item[Gevr. :] $i(t)$ ?
             \item[Opl. :]   
                 We kunnen a\@.d\@.h\@.v\@. de weerstand een formule voor de stroom afleiden uit $v(t)$, namelijk
                 \begin{equation*}
@@ -37,44 +37,93 @@ In de schakeling in onderstaande figuur, neem aan dat alle parameters behalve C 
         \end{description}
     \item
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
+            \item[Gevr. :] $P_{\text{gem}}^{\text{max}}$ ?
             \item[Opl. :]   
+                Het gemiddelde vermogen geleverd aan een wisselstroomkring, vinden we met:
+                \begin{equation*}
+                    P_{\text{gem}} = \frac{1}{2}I_{\text{max}}V_{\text{max}}\cos(\phi).
+                \end{equation*}
+                Dit kunnen we combineren met het resultaat van (a) waarbij $t = 0 \ \text{s}$ en $\phi = 0^\circ$, vinden we:
+                \begin{equation*}
+                    P_{\text{gem}}^{\text{max}} = \frac{1}{2}\frac{(\Delta V_{\text{max}})^2}{R}.
+                \end{equation*}
         \end{description}
     \item
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
+            \item[Geg. :] $S_1$ open en $S_2$ gesloten
+            \item[Gevr. :]  $i(t)$ ?
             \item[Opl. :]   
+                We kunnen de stroom afleiden uit $\Delta v(t)$ en de impedantie van het circuit: 
+                \begin{equation*}
+                    i(t) = \frac{\Delta V_{\text{max}}}{Z} \cos(\omega t + \phi)
+                \end{equation*}
+                waarbij we moeten rekening houden met $\phi$.
         \end{description}
     \item
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :] Resonantie !!! 
-            \item[Gevr. :] 
+            \item[Geg. :] $S_1$ open en $S_2$ open, $\phi = 0^\circ$
+            \item[Gevr. :] $C$ ?
             \item[Opl. :]   
+                Sinds er gegeven is dat de spanning en stroom in fase zijn en dus $\phi = 0$, volgt dat we mogen spreken van resonantie. Er volgt dus uit de resonantiehoeksnelheid:
+                \begin{equation*}
+                    \omega_0 = \sqrt{\frac{1}{LC}} \ \Rightarrow \ C = \frac{1}{\omega_0^2L}
+                \end{equation*}
         \end{description}
     \item
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
-            \item[Opl. :]   
+            \item[Geg. :]  $S_1$ open en $S_2$ open, $f_0$
+            \item[Gevr. :] $Z$ ?
+            \item[Opl. :]  
+                We spreken hier van resonantie, wat betekent dat $X_L = X_C$, en dus volgt voor de impedantie:
+                \begin{equation*}
+                    Z = \sqrt{R^2 + (X_L - X_C)^2} = R
+                \end{equation*} 
         \end{description}
         \item
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
-            \item[Opl. :]   
+            \item[Gevr. :] $U_{\text{max}, C}$, $U_{\text{max}, L}$
+            \item[Opl. :] 
+            \begin{itemize}
+                \item $U_{\text{max}, C}$: \\
+                    De energie opgeslagen in een condensator werd gegeven door:
+                    \begin{equation*}
+                        U_{C} = \frac{1}{2}C(\Delta V)^2.
+                    \end{equation*}
+                    Dit is maximaal als de spanning maximaal is: 
+                    \begin{equation*}
+                        U_{\text{max}, C} = \frac{1}{2\omega_0^2L}(\Delta V_{\text{max}})^2
+                    \end{equation*}
+                \item $U_{\text{max}, L}$: \\
+                    De energie opgeslagen in een inductor werd gegeven door:
+                    \begin{equation*}
+                        U_{L} = \frac{1}{2}L(I)^2.
+                    \end{equation*}
+                    Dit is maximaal als de stroom maximaal is:
+                    \begin{equation*}
+                        U_{\text{max},L} = \frac{1}{2}L(I_{\text{max}})^2 = \frac{L}{2}\frac{(\Delta V_{\text{max}})^2}{R^2}.
+                    \end{equation*}
+            \end{itemize}
         \end{description}
     \item
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
+            \item[Geg. :]  $f' = 2f_{0} \ \Rightarrow \ \omega' = 2\omega_0$ 
+            \item[Gevr. :] $\phi$ ?
             \item[Opl. :]   
+                % We berekenen $\phi$ met de geziene formule:
+                % \begin{align*}
+                %     \phi 
+                %         &= \tan^{-1}\left(\frac{X_L-X_C}{R}\right) \\
+                %         &= \tan^{-1}\left(\frac{\omega'L - \frac{1}{\omega'C}}{R}\right) \\
+                %         &= \tan^{-1}\left(\frac{2\omega_0L - \frac{1}{2\omega_0C}}{R}\right) \\
+                %         &= \tan^{-1}\left(\frac{(2\omega_0L - 1)^2}{2\omega_0CR}\right) \\
+                %         &= \tan^{-1}\left(\frac{(\frac{4}{C} - 4\omega_0L + 1)}{2\omega_0CR}\right) \\
+                %         &= \tan^{-1}\left(\frac{2}{\omega_0C^2R} - \frac{2L}{CR} + \frac{1}{2\omega_0CR}\right) \\
+                % \end{align*}
         \end{description}
     \item
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
+            \item[Geg. :]   $X_L = \frac{1}{2}X_R$
+            \item[Gevr. :]  $f'$ ?
             \item[Opl. :]   
         \end{description}
 \end{enumerate}
