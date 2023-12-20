@@ -31,9 +31,28 @@ Een spoel met $820$ windingen heeft een weerstand van $24,0 \ \Omega$, en wordt 
             \item[Opl. :]  
                 De tweede wet van Kirchhoff geeft ons volgende vergelijking:
                 \begin{equation*}
-                    \mathcal{E} - I_{{\text{sol}}}R - L\frac{dI_{{\text{sol}}}}{dt} - M\frac{dI_{\text{spoel}}}{dt} = 0.
+                    \mathcal{E} = I_{{\text{sol}}}R + L\frac{dI_{{\text{sol}}}}{dt} + M\frac{dI_{\text{spoel}}}{dt}.
                 \end{equation*}
-                We bewijzen nu dat we kunnen aannemen dat  dit equivalent is aan de formule van een RL-kring: 
+                % Met de wet van Faraday vinden we:
+                % \begin{align}
+                %     \left|\mathcal{E}_{\text{back}}\right| &=
+                %     L_{\text{sol}}\frac{dI_{\text{sol}}}{dt} = N_{\text{sol}}\frac{d}{dt}\left(AB_{\text{sol}}\right) = \frac{\mu_0N_{\text{sol}}^2A}{\ell_{\text{sol}}}\frac{dI_{\text{sol}}}{dt} \\
+                %     %
+                %     \left|\mathcal{E}_{\text{ind}}\right| &= M\frac{dI_{\text{spoel}}}{dt} = N_{\text{sol}}\frac{d}{dt}\left(AB_{\text{spoel}}\right) = \frac{\mu_0N_{\text{sol}}N_{\text{spoel}}A}{\ell_{\text{spoel}}}\frac{dI_{\text{sol}}}{dt}
+                % \end{align}
+                % Als we (1) en (2) invullen in de vergelijking van Kirchhoff vinden we:
+                % \begin{equation*}
+                %     \mathcal{E} = I_{{\text{sol}}}R + \mu_0A\left(\frac{N_{\text{sol}}^2}{\ell_{\text{sol}}} + \frac{N_{\text{sol}}N_{\text{spoel}}}{\ell_{\text{spoel}}} \right)\frac{dI_{\text{sol}}}{dt}.
+                % \end{equation*}
+                % Stel nu dat
+                % \begin{equation*}
+                %     L_{\text{eq}} = \mu_0A\left(\frac{N_{\text{sol}}^2}{\ell_{\text{sol}}} + \frac{N_{\text{sol}}N_{\text{spoel}}}{\ell_{\text{spoel}}}\right)
+                % \end{equation*}
+                % dan vinden we voor de stroom door de solenoïde
+                % \begin{equation*}
+                %     I_{\text{sol}}(t) = \frac{\mathcal{E}}{R} \left( 1 - e^{-\frac{R}{L_{\text{eq}}}t} \right).
+                % \end{equation*}
+                We bewijzen nu dat we kunnen aannemen dat dit equivalent is aan de formule van een RL-kring: 
                 \begin{tcolorbox}
                     \begin{description}
                         \item[T.B. :] $\frac{d}{dt} I_{\text{spoel}}(t) << \frac{d}{dt} I_{\text{sol}}(t)$

@@ -10,30 +10,58 @@ Een zeer grote parallelle platen condensator draagt een lading met een uniforme 
     \item Op welke snelheid $v$ zal de magnetische kracht op een plaat gelijk zijn aan de elektrische kracht op die plaat?
 \end{enumerate}
 
+\begin{description}[labelwidth=1.5cm, leftmargin=!]
+    \item[Geg. :]  $\sigma_+ = +\sigma$, $\sigma_- = -\sigma$, $v$
+\end{description}
+
 \begin{enumerate}[(a)]
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
+            \item[Gevr. :] $B_{\text{in}}$ ?
             \item[Opl. :]   
+                Het magnetisch veld door de bovenste plaat vinden we met 
+                \begin{equation*}
+                    B = \frac{\mu_o J_s}{2} = \frac{\mu_0}{2}\frac{I}{w} = \frac{\mu_0}{2}\sigma v
+                \end{equation*}
+                met $w$ de zijde waardoor de lading stroomt. Het magnetisch veld door de onderste plaat vinden we met \begin{equation*}
+                    B = -\frac{\mu_o J_s}{2} = -\frac{\mu_0}{2}\frac{I}{w} = -\frac{\mu_0}{2}\sigma v.
+                \end{equation*}
+                Deze velden zullen elkaar versterken, dus het totale magnetisch veld tussen de platen is
+                \begin{equation*}
+                    \vec{B}_{\text{in}} = \mu_0\sigma v \ (-\hat{k}).
+                \end{equation*}
         \end{description}
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
+            \item[Gevr. :] $B_{\text{uit}}$ ?
             \item[Opl. :]   
+                Het zijn oneindige platen (wat we als oneindig veel draden kunnen beschouwen) dus het magnetisch veld zal buiten de platen nul zijn, sinds ze elkaar opheffen.
         \end{description}
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
-            \item[Opl. :]   
+            \item[Gevr. :] $\frac{\vec{F_b}}{A}$ ?
+            \item[Opl. :]  
+                We berekenen de magnetische kracht op een plaat
+                \begin{equation*}
+                    \vec{F_b} = I\vec{\ell} \times \vec{B} = I \ell B \ (\hat{j}) = \frac{\mu_0\sigma^2v^2A}{2} \ (\hat{j})
+                \end{equation*}
+                met $\vec{\ell}$ de lengte van de plaat (in het vlak van het magnetisch veld). De kracht per eenheid oppervlakte is dus
+                \begin{equation*}
+                    \frac{\vec{F_b}}{A} = \frac{\mu_0\sigma^2v^2}{2} \ (\hat{j}).
+                \end{equation*}
         \end{description}
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   
-            \item[Gevr. :] 
-            \item[Opl. :]   
+            \item[Gevr. :] $v \Rightarrow F_e = F_b$ ?
+            \item[Opl. :] 
+                De elektrische kracht op een plaat is
+                \begin{equation*}
+                    \vec{F_e} = q \vec{E} = \sigma A \frac{\sigma}{2\epsilon_0} \ (-\hat{j}) = A \frac{\sigma^2}{2\epsilon_0} \ (-\hat{j}).
+                \end{equation*}
+                We stellen de krachten aan elkaar gelijk en vinden voor $v$:
+                \begin{equation*}
+                    v = \sqrt{\frac{1}{\epsilon_0\mu_0}} \approx c
+                \end{equation*}
         \end{description}
 \end{enumerate}
 
