@@ -35,19 +35,19 @@ Bereken de kracht die inwerkt op een oneindig lange, rechte draad met stroom $I$
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
             \item[Geg. :]   $I$,$s$,$a$
             \item[Gevr. :]  de lorentzkracht $F_L$
-            \item[Opl. :]   We berekenen eerst de infinitesimale kracht veroorzaakt door de schuine draden: 
+            \item[Opl. :]   We berekenen eerst de infinitesimale kracht veroorzaakt door de schuine draden, we weten dat de horizontale componenten elkaar opheffen: 
                             \begin{equation*}
-                                dF_{\text{schuin}} = \dfrac{\mu_0I^2\sin(60^\circ)}{2\pi}\dfrac{1}{r}dr
+                                dF_{\text{schuin}, y} = \dfrac{\mu_0I^2\sin(60^\circ)}{2\pi}\dfrac{1}{r}dr
                             \end{equation*}
                             Hierover integreren we: 
                             \begin{align*}
-                                F_{\text{schuin}} &= \int dF_{\text{schuin}} \\
+                                F_{\text{schuin}, y} &= \int dF_{\text{schuin}, y} \\
                                                   &= \dfrac{\mu_0I^2}{2\pi\sin(60^\circ)} \int_s^{s+a\sin(60^\circ)} \tfrac{1}{r}dr \\
                                                   &= \dfrac{\mu_0I^2}{2\pi\sin(60^\circ)}\left(\ln(\tfrac{s+a\sin(60^\circ)}{s}) \right)
                             \end{align*}
                             Via superpositie vinden we: 
                             \begin{align*}
-                                F_L &= 2F_{\text{schuin}} - F_{\parallel, s} \\
+                                F_L &= 2F_{\text{schuin}, y} - F_{\parallel, s} \\
                                     &= \dfrac{\mu_0I^2}{2\pi}\left(\tfrac{1}{\sin(60^\circ)}\ln(\tfrac{s+a\sin(60^\circ)}{s}) - \dfrac{a}{s}\right)
                             \end{align*}
                             Vectorieel wordt dit:
