@@ -26,11 +26,11 @@ van koper is $1.75 \cdot 10^{-8} \ \Omega$m bij $20^\circ$.
                     \end{equation*}
                     Er is gegeven dat opeenvolgende wikkelingen elkaar raken, hieruit volgt dat 
                     \begin{equation*}
-                        B = \mu_0\dfrac{N}{\ell_{\text{spoel}}}I_{\text{in}} = \mu_0d_{\text{draad}}I_{\text{in}} 
+                        B = \mu_0\dfrac{N}{\ell_{\text{spoel}}}I_{\text{in}} = \mu_0\frac{1}{d_{\text{draad}}}I_{\text{in}} 
                     \end{equation*}
                     sinds $N = \tfrac{\ell_{\text{spoel}}}{d_{\text{draad}}}$. We vervangen $I_{\text{in}}$ met $\sqrt{\tfrac{P}{R}}$:
                     \begin{equation*}
-                        B = \mu_0\sqrt{\dfrac{P}{R}} = \mu_0\sqrt{\dfrac{P}{4\rho\dfrac{\ell_{\text{draad}}}{\pi d_{\text{draad}}^2}}}
+                        B = \mu_0\frac{1}{d_{\text{draad}}}\sqrt{\dfrac{P}{R}} = \mu_0\frac{1}{d_{\text{draad}}}\sqrt{\dfrac{P}{4\rho\dfrac{\ell_{\text{draad}}}{\pi d_{\text{draad}}^2}}}
                     \end{equation*}
                     De lengte van de draad kunnen we berekenen met
                     \begin{equation*}
@@ -38,7 +38,7 @@ van koper is $1.75 \cdot 10^{-8} \ \Omega$m bij $20^\circ$.
                     \end{equation*}
                     Hieruit kunnen we P berekenen: 
                     \begin{equation*}
-                        P = \left(\dfrac{B}{\mu_0}\right)^2\left(4\rho N \dfrac{d_{\text{spoel}}}{
+                        P = \left(\dfrac{Bd_{\text{draad}}}{\mu_0}\right)^2\left(4\rho N \dfrac{d_{\text{spoel}}}{
                         d_{\text{draad}}^2}\right) \approx 213 W
                     \end{equation*}           
 \end{description}
