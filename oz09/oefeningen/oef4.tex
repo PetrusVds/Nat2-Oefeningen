@@ -37,7 +37,7 @@ In de schakeling in onderstaande figuur, neem aan dat alle parameters behalve C 
         \end{description}
     \item
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Gevr. :] $P_{\text{gem}}^{\text{max}}$ ?
+            \item[Gevr. :] $P_{\text{gem}}$ ?
             \item[Opl. :]   
                 Het gemiddelde vermogen geleverd aan een wisselstroomkring, vinden we met:
                 \begin{equation*}
@@ -45,7 +45,7 @@ In de schakeling in onderstaande figuur, neem aan dat alle parameters behalve C 
                 \end{equation*}
                 Dit kunnen we combineren met het resultaat van (a) waarbij $t = 0 \ \text{s}$ en $\phi = 0^\circ$, vinden we:
                 \begin{equation*}
-                    P_{\text{gem}}^{\text{max}} = \frac{1}{2}\frac{(\Delta V_{\text{max}})^2}{R}.
+                    P_{\text{gem}} = \frac{1}{2}\frac{(\Delta V_{\text{max}})^2}{R}.
                 \end{equation*}
         \end{description}
     \item
@@ -87,11 +87,11 @@ In de schakeling in onderstaande figuur, neem aan dat alle parameters behalve C 
                 \item $U_{\text{max}, C}$: \\
                     De energie opgeslagen in een condensator werd gegeven door:
                     \begin{equation*}
-                        U_{C} = \frac{1}{2}C(\Delta V)^2.
+                        U_{C} = \frac{1}{2}C(\Delta v)^2 = \frac{1}{2}Ci^2X_C^2.
                     \end{equation*}
-                    Dit is maximaal als de spanning maximaal is: 
+                    Dit is maximaal als de spanning maximaal, en dus de stroom maximaal is: 
                     \begin{equation*}
-                        U_{\text{max}, C} = \frac{1}{2\omega_0^2L}(\Delta V_{\text{max}})^2
+                        U_{\text{max}, C} = CI_{\text{max}}^2X_C^2 = \frac{(L\Delta V_{\text{max}})^2}{2R^2}
                     \end{equation*}
                 \item $U_{\text{max}, L}$: \\
                     De energie opgeslagen in een inductor werd gegeven door:
@@ -100,7 +100,7 @@ In de schakeling in onderstaande figuur, neem aan dat alle parameters behalve C 
                     \end{equation*}
                     Dit is maximaal als de stroom maximaal is:
                     \begin{equation*}
-                        U_{\text{max},L} = \frac{1}{2}L(I_{\text{max}})^2 = \frac{L}{2}\frac{(\Delta V_{\text{max}})^2}{R^2}.
+                        U_{\text{max},L} = \frac{1}{2}L(I_{\text{max}})^2 = \frac{(L\Delta V_{\text{max}})^2}{2R^2}.
                     \end{equation*}
             \end{itemize}
         \end{description}
@@ -109,22 +109,26 @@ In de schakeling in onderstaande figuur, neem aan dat alle parameters behalve C 
             \item[Geg. :]  $f' = 2f_{0} \ \Rightarrow \ \omega' = 2\omega_0$ 
             \item[Gevr. :] $\phi$ ?
             \item[Opl. :]   
-                % We berekenen $\phi$ met de geziene formule:
-                % \begin{align*}
-                %     \phi 
-                %         &= \tan^{-1}\left(\frac{X_L-X_C}{R}\right) \\
-                %         &= \tan^{-1}\left(\frac{\omega'L - \frac{1}{\omega'C}}{R}\right) \\
-                %         &= \tan^{-1}\left(\frac{2\omega_0L - \frac{1}{2\omega_0C}}{R}\right) \\
-                %         &= \tan^{-1}\left(\frac{(2\omega_0L - 1)^2}{2\omega_0CR}\right) \\
-                %         &= \tan^{-1}\left(\frac{(\frac{4}{C} - 4\omega_0L + 1)}{2\omega_0CR}\right) \\
-                %         &= \tan^{-1}\left(\frac{2}{\omega_0C^2R} - \frac{2L}{CR} + \frac{1}{2\omega_0CR}\right) \\
-                % \end{align*}
+                We berekenen $\phi$ met de geziene formule:
+                \begin{align*}
+                    \phi 
+                        &= \tan^{-1}\left(\frac{X_L-X_C}{R}\right) \\
+                        &= \tan^{-1}\left(\frac{\omega' L - \frac{1}{\omega' C}}{R}\right) \\
+                        &= \tan^{-1}\left(\frac{2\omega_0 L - \frac{1}{2\omega_0 C}}{R}\right) \\
+                        &= \tan^{-1}\left(\frac{\frac{2L}{\sqrt{LC}}L - \frac{\sqrt{LC}}{2C}}{R}\right) \\
+                        &= \ldots \\
+                        &= \tan^{-1}\left(\frac{3}{2}\sqrt{\frac{L}{C}}\right)
+                \end{align*}
         \end{description}
     \item
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
-            \item[Geg. :]   $X_L = \frac{1}{2}X_R$
+            \item[Geg. :]   $X_L = \frac{1}{2}X_C$
             \item[Gevr. :]  $f'$ ?
             \item[Opl. :]   
+                Als de inductieve reactantie de helft is van de capacitieve reactantie, dan volgt: 
+                \begin{equation*}
+                    \omega = \frac{1}{2\sqrt{LC}} = \frac{\omega_0}{2}
+                \end{equation*}
         \end{description}
 \end{enumerate}
 
