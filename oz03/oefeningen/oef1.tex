@@ -24,36 +24,34 @@ Bereken de kracht die inwerkt op een oneindig lange, rechte draad met stroom $I$
             \item[Gevr. :]  de lorentzkracht $F_L$
             \item[Opl. :]   De evenwijdige zijden zullen een kracht uitoefenen op de draad. We vinden: 
                             \begin{align*}
-                                F_L &= F_{\parallel, s+a} - F_{\parallel, s} \\ 
-                                    % &= \dfrac{\mu_0I^2a}{2\pi}\left( \dfrac{1}{s+a} -\dfrac{1}{s} \right) \\
-                                    &= \dfrac{\mu_0I^2}{2\pi}\dfrac{a^2}{s(s+a)} \\
-                                \intertext{ Vectorieel wordt dit:}
-                                \Vec{F}_L &= \dfrac{\mu_0I^2}{2\pi} \dfrac{a^2}{s(s+a)}(-\hat{j})
+                                \vec{F}_L &= \vec{F}_{\parallel, s+a} - \vec{F}_{\parallel, s}\\ 
+                                    &= \dfrac{\mu_0I^2a}{2\pi}\left( \dfrac{1}{s} - \dfrac{1}{s+a} \right) \ (\hat{j}) \\
+                                    &= \dfrac{\mu_0I^2}{2\pi}\dfrac{a^2}{s(s+a)} \ (\hat{j})
                             \end{align*}
         \end{description}
     \item 
         \begin{description}[labelwidth=1.5cm, leftmargin=!]
             \item[Geg. :]   $I$,$s$,$a$
             \item[Gevr. :]  de lorentzkracht $F_L$
-            \item[Opl. :]   We berekenen eerst de infinitesimale kracht veroorzaakt door de schuine draden, we weten dat de horizontale componenten elkaar opheffen: 
-                            \begin{equation*}
-                                dF_{\text{schuin}, y} = \frac{1}{2}\dfrac{\mu_0I^2}{2\pi\sin(60^\circ)}\dfrac{1}{r}dr
-                            \end{equation*}
-                            Hierover integreren we: 
-                            \begin{align*}
-                                F_{\text{schuin}, y} &= \frac{1}{2}\int dF_{\text{schuin}, y} \\
-                                                  &= \frac{1}{2}\dfrac{\mu_0I^2}{2\pi\sin(60^\circ)} \int_s^{s+a\sin(60^\circ)} \tfrac{1}{r}dr \\
-                                                  &= \frac{1}{2}\dfrac{\mu_0I^2}{2\pi\sin(60^\circ)}\left(\ln(\tfrac{s+a\sin(60^\circ)}{s}) \right)
-                            \end{align*}
-                            Via superpositie vinden we: 
-                            \begin{align*}
-                                F_L &= 2F_{\text{schuin}, y} - F_{\parallel, s} \\
-                                    &= \dfrac{\mu_0I^2}{2\pi}\left(\tfrac{1}{\sin(60^\circ)}\ln(\tfrac{s+a\sin(60^\circ)}{s}) - \dfrac{a}{s}\right)
-                            \end{align*}
-                            Vectorieel wordt dit:
-                            \begin{equation*}
-                                \Vec{F}_L = \dfrac{\mu_0I^2}{2\pi}\left( \tfrac{a}{s} - \tfrac{1}{\sin(60^\circ)}\left(\ln(\tfrac{s+a\sin(60^\circ)}{s}) \right) \right) (-\hat{j})
-                            \end{equation*}
+            \item[Opl. :]                              
+                        Een infinitesimale stukje $d\vec{\ell}$ van de linkse en rechtse schuine zijden kunnen we vectorieel voorstellen als
+                        \begin{equation*}
+                            d\vec{\ell}_l = dl\left(\cos(60^\circ) \hat{i} + \sin(60^\circ) \hat{j} \right), \ d\vec{\ell}_r = dl\left(\cos(60^\circ) \hat{i} - \sin(60^\circ) \hat{j} \right).
+                        \end{equation*}
+                        Als we over de hele schuine zijde $\ell$ integreren, dan heffen de verticale componenten elkaar op en blijft enkel de horizontale component over. We vinden:
+                        \begin{align*}
+                            \vec{F}_{\text{l+r}} 
+                                &= \int Id\vec{\ell} \times \vec{B} \\ 
+                                &= \frac{\mu_0I^2}{2\pi} \int \frac{1}{r} d\ell \ (-\hat{j}) \\
+                                % &= \frac{\mu_0I^2}{2\pi} \int_0^a \frac{1}{r} d\ell_L \ (\hat{j}) \\
+                                &= \frac{\mu_0I^2}{\pi} \int_0^a \frac{1}{r} \cos(60^\circ)d\ell \ (-\hat{j}) \\
+                                &= \frac{\mu_0I^2}{\pi} \frac{\cos(60^\circ)}{\sin(60^\circ)} \int_{s}^{s+a\sin(60^\circ)} \frac{1}{r} dr \ (-\hat{j}) \\
+                                &= \frac{\mu_0I^2}{2\pi} \frac{1}{\sin(60^\circ)} \ln\left(\frac{s+a\sin(60^\circ)}{s}\right) \ (-\hat{j})
+                        \end{align*}
+                        Als we $\vec{F}_{\parallel, s}$ hernemen uit (a), dan vinden we voor de totale kracht van heel de driehoek:
+                        \begin{equation*}
+                            \vec{F}_L = \vec{F}_{\text{l+r}} + \vec{F}_{\parallel, s} = \frac{\mu_0I^2}{2\pi}\left(\frac{a}{s} - \frac{1}{\sin(60^\circ)}\ln\left(\frac{s+a\sin(60^\circ)}{s}\right)\right)  \ (\hat{j})
+                        \end{equation*}
         \end{description}
         
 \end{enumerate}

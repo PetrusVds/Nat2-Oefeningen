@@ -15,32 +15,37 @@ Bereken de geïnduceerde stroom in de ring in functie van de tijd. Specificeer z
     \item[Geg. :]  $r(t)$, $R(\ell)$, $\Vec{B}_0$
     \item[Gevr. :]  $I_{\text{ind}}$
     \item[Opl. :] 
-        We gebruiken de wet van Faraday
+        \textbf{Opmerking:} Er is niet gegeven hoe het magneetveld gericht is. We nemen aan dat het magneetveld in het blad gaat, m\@.a\@.w\@.:
         \begin{equation*}
-            \oint \Vec{E}_{\text{ind}} \cdot d\ell = \frac{d\Phi_B}{dt} 
+            \Vec{B}_0 = B_0 \ (-\hat{k}).
+        \end{equation*}
+
+        \noindent We gebruiken de wet van Faraday waarbij $d\vec{\ell}$ dezelfde richting heeft als $\vec{E}_{\text{ind}}$:
+        \begin{equation*}
+            \oint \Vec{E}_{\text{ind}} \cdot d\vec{\ell} = E_{\text{ind}}\int_0^{2\pi r(t)}d\ell= - \frac{d\Phi_B}{dt} 
         \end{equation*}
         waarbij
-        \begin{align*}
+        \begin{equation*}
             E_{\text{ind}} 
-                &= \rho J \\
-                &= \left(\frac{A}{\ell}R(\ell)\right)\frac{I_{\text{ind}}}{A} \\ 
-                &= I_{\text{ind}}\left(R_{0}(1 + \beta t)\right)
-        \end{align*} 
+                = \rho J 
+                % = \left(\frac{A}{\ell}R(\ell)\right)\frac{I_{\text{ind}}}{A} 
+                = I_{\text{ind}}\left(R_{0}(1 + \beta t)\right)
+        \end{equation*} 
         We krijgen nu
         \begin{equation*}
-                I_{\text{ind}}\left(R_{0}(1 + \beta t)\right) \int_0^{2\pi r(t)} d\ell = \frac{d\Phi_B}{dt}
+                I_{\text{ind}}\left(R_{0}(1 + \beta t)\right) \int_0^{2\pi r(t)} d\ell = - \frac{d\Phi_B}{dt}
         \end{equation*}
-        waaruit volgt
+        waaruit volgt, waarbij $\vec{A} = A \ (\hat{k})$:
         \begin{align*}
             I_{\text{ind}} 
                 &= \frac{\frac{d}{dt} \left( B_0 A \right)}{\left(R_{0}(1 + \beta t)\right) \int_0^{2\pi r(t)} d\ell } \\
                 &= \frac{\frac{d}{dt} \left( B_0 A \right)}{\left(R_{0}(1 + \beta t)\right) \left(2\pi r(t)\right) } \\
-                &= \frac{\frac{d}{dt} \left(B_0 \pi r(t)^2 \right)}{\left(R_{0}(1 + \beta t)\right) \left(2\pi r(t)\right)} \\
+                % &= \frac{\frac{d}{dt} \left(B_0 \pi r(t)^2 \right)}{\left(R_{0}(1 + \beta t)\right) \left(2\pi r(t)\right)} \\
                 &= \frac{B_0 \left(\frac{d}{dt} \pi r(t)^2\right)}{\left(R_{0}(1 + \beta t)\right)\left(2\pi r(t)\right)} \\
                 &= \frac{B_0 \left(2\pi r(t)\right) \left(\frac{d}{dt} \alpha t\right)}{\left(R_{0}(1 + \beta t)\right)\left(2\pi r(t)\right)} \\
                 &= \frac{B_0 \alpha}{\left(R_{0}(1 + \beta t)\right)}
         \end{align*}
-        De stroom zal wijzersin gaan als $\alpha > 0$.
+        De stroom zal wijzerzin gaan als $\alpha > 0$.
 \end{description}
 
 \vspace{1cm}
