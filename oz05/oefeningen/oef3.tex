@@ -35,10 +35,10 @@ Bereken de geïnduceerde stroom in de ring in functie van de tijd. Specificeer z
         \begin{equation*}
                 I_{\text{ind}}\left(R_{0}(1 + \beta t)\right) \int_0^{2\pi r(t)} d\ell = - \frac{d\Phi_B}{dt}
         \end{equation*}
-        waaruit volgt, waarbij $\vec{A} = A \ (\hat{k})$:
+        waaruit volgt, waarbij $d\vec{A} = dA \ (\hat{k})$:
         \begin{align*}
             I_{\text{ind}} 
-                &= \frac{\frac{d}{dt} \left( B_0 A \right)}{\left(R_{0}(1 + \beta t)\right) \int_0^{2\pi r(t)} d\ell } \\
+                &= \frac{\frac{d}{dt} \left( \int \vec{B_0} \cdot d\vec{A} \right)}{\left(R_{0}(1 + \beta t)\right) \int_0^{2\pi r(t)} d\ell } \\
                 &= \frac{\frac{d}{dt} \left( B_0 A \right)}{\left(R_{0}(1 + \beta t)\right) \left(2\pi r(t)\right) } \\
                 % &= \frac{\frac{d}{dt} \left(B_0 \pi r(t)^2 \right)}{\left(R_{0}(1 + \beta t)\right) \left(2\pi r(t)\right)} \\
                 &= \frac{B_0 \left(\frac{d}{dt} \pi r(t)^2\right)}{\left(R_{0}(1 + \beta t)\right)\left(2\pi r(t)\right)} \\
