@@ -31,7 +31,7 @@ Een spoel met $820$ windingen heeft een weerstand van $24,0 \ \Omega$, en wordt 
             \item[Opl. :]  
                 De tweede wet van Kirchhoff geeft ons volgende vergelijking:
                 \begin{equation*}
-                    \mathcal{E} = I_{{\text{sol}}}R + L\frac{dI_{{\text{sol}}}}{dt} + M\frac{dI_{\text{spoel}}}{dt}.
+                    \mathcal{E} = I_{{\text{sol}}}R + L\frac{dI_{{\text{sol}}}}{dt} .
                 \end{equation*}
                 % Met de wet van Faraday vinden we:
                 % \begin{align}
@@ -52,27 +52,28 @@ Een spoel met $820$ windingen heeft een weerstand van $24,0 \ \Omega$, en wordt 
                 % \begin{equation*}
                 %     I_{\text{sol}}(t) = \frac{\mathcal{E}}{R} \left( 1 - e^{-\frac{R}{L_{\text{eq}}}t} \right).
                 % \end{equation*}
-                We bewijzen nu dat we kunnen aannemen dat dit equivalent is aan de formule van een RL-kring: 
-                \begin{tcolorbox}
-                    \begin{description}
-                        \item[T.B. :] $\frac{d}{dt} I_{\text{spoel}}(t) << \frac{d}{dt} I_{\text{sol}}(t)$
-                        \item[Aanname :] $N_{\text{sol}} << N_{\text{spoel}}$
-                        \item[B. :] 
-                            We kunnen deze constructie zien als een transformator en dus:
-                            \begin{equation*}
-                                I_{\text{sol}}(t) = \frac{N_{\text{spoel}}}{N_{\text{sol}}} I_{\text{spoel}}(t).
-                            \end{equation*}
-                            Dit kunnen we afleiden
-                            \begin{equation*}
-                                \frac{d}{dt} I_{\text{sol}}(t) = \frac{N_{\text{spoel}}}{N_{\text{sol}}} \frac{d}{dt} I_{\text{spoel}}(t)
-                            \end{equation*}
-                            en dankzij onze aanname volgt dat 
-                            \begin{equation*}
-                                \frac{d}{dt} I_{\text{spoel}}(t) << \frac{d}{dt} I_{\text{sol}}(t).
-                            \end{equation*}
-                    \end{description}
-                \end{tcolorbox}
-                Er is dus bewezen dat we van een RL-kring mogen spreken. In een RL-kring volgt de stroom de volgende formule
+                % We bewijzen nu dat we kunnen aannemen dat dit equivalent is aan de formule van een RL-kring: 
+                % \begin{tcolorbox}
+                %     \begin{description}
+                %         \item[T.B. :] $\frac{d}{dt} I_{\text{spoel}}(t) << \frac{d}{dt} I_{\text{sol}}(t)$
+                %         \item[Aanname :] $N_{\text{sol}} << N_{\text{spoel}}$
+                %         \item[B. :] 
+                %             We kunnen deze constructie zien als een transformator en dus:
+                %             \begin{equation*}
+                %                 I_{\text{sol}}(t) = \frac{N_{\text{spoel}}}{N_{\text{sol}}} I_{\text{spoel}}(t).
+                %             \end{equation*}
+                %             Dit kunnen we afleiden
+                %             \begin{equation*}
+                %                 \frac{d}{dt} I_{\text{sol}}(t) = \frac{N_{\text{spoel}}}{N_{\text{sol}}} \frac{d}{dt} I_{\text{spoel}}(t)
+                %             \end{equation*}
+                %             en dankzij onze aanname volgt dat 
+                %             \begin{equation*}
+                %                 \frac{d}{dt} I_{\text{spoel}}(t) << \frac{d}{dt} I_{\text{sol}}(t).
+                %             \end{equation*}
+                %     \end{description}
+                % \end{tcolorbox}
+                % Er is dus bewezen dat we van een RL-kring mogen spreken. 
+                In een RL-kring volgt de stroom de volgende formule:
                 \begin{equation*}
                     I(t) = I_{\text{max}} \left( 1 - e^{-\frac{t}{\tau}} \right)
                 \end{equation*}
